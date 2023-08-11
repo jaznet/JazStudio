@@ -132,5 +132,8 @@
       }
     }
   },
-  "defaultProject": "JazStudio"
+  "defaultProject": "JazStudio",
+  "cli": {
+    "analytics": "f2454c90-9ef1-4f9e-8f4f-b01730783911"
+  }
 }
