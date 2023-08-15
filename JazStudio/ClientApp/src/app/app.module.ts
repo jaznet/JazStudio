@@ -11,6 +11,7 @@ import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { AppPartsModule } from '../library/app-parts/app-parts.module';
 import { WelcomeComponent } from '../sections/welcome/welcome/welcome.component';
+import { JzButtonsModule } from '../library/jz-ui-controls/jz-buttons/jz-buttons.module';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { WelcomeComponent } from '../sections/welcome/welcome/welcome.component'
     FormsModule,
     ApiAuthorizationModule,
     AppPartsModule,
+    JzButtonsModule,
     RouterModule.forRoot([
       { path: '', component: WelcomeComponent, pathMatch: 'full' },
     ])

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
 
 
 
@@ -9,7 +10,8 @@ import { WelcomeComponent } from './welcome/welcome.component';
     WelcomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    JzButtonsModule
   ],
   exports: [WelcomeComponent]
 })

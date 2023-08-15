@@ -18,3 +18,46 @@
     justify-content: center;
     align-items: center;
   }
+
+.j3-button-container {
+  border-radius: 5px;
+  background: linear-gradient(to bottom right,#ffffff60,#00000020);
+  width: 100px;
+}
+
+.j3-button-bevel {
+  border-radius: 5px;
+  background: linear-gradient(to right,#ffffff30 0%, #ffffff05 3%, #ffffff05 97%, #000000ff 100%);
+  width: 100%;
+}
+
+.j3-button-top-bevel {
+  border-radius: 5px;
+  background: linear-gradient(to right,#ffffff05,#ffffff15);
+  width: 100%;
+  height: 100%;
+}
+
+.j3-button {
+  width: 100%;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.j3-button-text {
+  cursor: pointer;
+  border: .5px solid #000000a0;
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  color: white;
+  justify-content: center;
+  background: linear-gradient(#ffffff30 0%, #ffffff05 10%, #ffffff05 90%, #000000ff 100%);
+}
+
+.j3-button-base-layer {
+  width: 100px;
+  height: 28px;
+  border-radius: 5px;
+  background-color: var(--jz-palette-color-2);
+}
