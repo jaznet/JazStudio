@@ -1,0 +1,56 @@
+
+div {
+  display: flex;
+  color: white;
+  
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: museo;
+}
+
+app-root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-family: varela;
+  background-color: #290E05;
+}
+
+.app-body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  font-family: varela;
+  background-color: #290E05;
+}
+
+.router-container {
+  border-radius: 5px;
+  background-color: var(--jz-palette-color-2);
+}
+
+.sub-router-container {
+  margin-right:8px;
+  border: 1px solid var(--jz-palette-border);
+  border-radius: 5px;
+  background-color: var(--jz-palette-color-2);
+}
+
+.app-subview {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: var(--jz-palette-color-2);
+  border-radius:5px;
+  flex-flow:row;
+}
+
+.sync-license {
+    visibility:collapse;
+}

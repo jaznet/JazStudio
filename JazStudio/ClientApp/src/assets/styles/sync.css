@@ -1,0 +1,19 @@
+
+.content {
+    color:black;
+}
+
+.e-dashboardlayout.e-control .e-panel {
+    background-color:transparent;
+}
+
+  .e-dashboardlayout.e-control .e-panel .e-panel-container .e-panel-content {
+    background-color: #c9e2f7;
+    padding: 50px;
+    border: 1px solid yellow;
+  }
+
+.e-dashboardlayout.e-control.e-responsive {
+  height: 100% !important;
+  width: 100% !important;
+}
