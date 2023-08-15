@@ -12,6 +12,7 @@ export class J3StudioComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    console.log("JazStudio");
   }
 
 }
