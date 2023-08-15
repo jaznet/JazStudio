@@ -1,0 +1,69 @@
+
+.dx-toolbar-label > div {
+  color: #B9B7A7;
+}
+
+.dx-button-has-icon .dx-button-content {
+  padding: 0px;
+}
+
+.dx-button .dx-button-content {
+   padding: 0px; 
+}
+
+.httperror-popup .dx-popup-title.dx-toolbar {
+  padding-left: 15px;
+  background-color: violet;
+}
+
+.dx-button-has-icon .dx-icon {
+    font-size:14px;
+}
+
+.dx-popover-wrapper .dx-popup-title.dx-toolbar {
+   padding-left: unset; 
+}
+
+.popover-content-container {
+  height: 100%;
+  flex-flow: column;
+  justify-content: center;
+  padding: 8px;
+}
+
+.popover-content-item {
+  font-size: 11px;
+  text-align: center;
+  color: black;
+  font-family: montserrat;
+  line-height:13px;
+}
+
+.popover-content-item.status {
+    font-size:13px;
+    margin:auto;
+    font-weight:600;
+}
+
+.dx-popup-title.dx-toolbar {
+  background-color: red;
+}
+
+.dx-popover-wrapper .dx-popup-title.dx-toolbar {
+  background-color: red;
+  padding-left: 15px;
+}
+
+.httperror-popup .dx-overlay-content .dx-popup-content {
+  flex-flow: column;
+  background-color: #A8A4A0;
+  padding: 0;
+  border-radius: 9px;
+}
+
+.httperror-popup .dx-overlay-content .dx-popup-content {
+  flex-flow: column;
+  background-color: #A8A4A0;
+  padding: 0;
+  border-radius: 0px 0px 9px 9px;
+}

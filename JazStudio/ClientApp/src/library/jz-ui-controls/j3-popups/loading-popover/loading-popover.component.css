@@ -1,0 +1,26 @@
+.msg {
+    margin:auto;
+    color:black;
+}
+
+lib-elapsed-time div {
+    color:black;
+}
+
+.loading-popup {}
+
+.loading-popup .dx-overlay-content .dx-popup-content {
+  flex-flow: column;
+  background-color: #E78F8E;
+  padding: 0;
+}
+
+.loading-popup .dx-overlay-content .dx-popup-content {
+    border-bottom-left-radius:9px;
+    border-bottom-right-radius:9px;
+}
+
+.loading-popup .dx-popup-title.dx-toolbar {
+  padding-left: 15px;
+  background-color: yellow;
+}

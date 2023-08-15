@@ -1,0 +1,33 @@
+<div class="main-menu-container-aux">
+  <jz-menu-container [initialTemplate]="menuItemsAux"
+                  [orientation]="'horizontal'"
+                  type="main"
+                  [menuName]="'main-menu-aux'">
+    <ng-template #menuItemsAux>
+
+      <jz-tab [state]="'selected'" [menuItem]="'home'" [menuName]="menuName" [orientation]="orientation" [route]="'/home'" [btnTxt]="'Loginx'"></jz-tab>
+
+      <!--<menu-item-func #menuitem
+                  class="menu-button login"
+                  style="margin-right: 7px;"
+                  menuContainer="aux"
+                  menuItem="logon"
+                  tabClass="tabElement aux"
+                  tabtext="Login"
+                  buttonClass="menu-button login">
+  </menu-item-func>
+
+  <menu-item-func #menuitem
+                  class="menu-button comment"
+                  style="margin-right: 7px;"
+                  menuContainer="aux"
+                  menuItem="contactus"
+                  tabClass="tabElement aux comment"
+                  tabtext="Comment"
+                  buttonClass="menu-button comment">
+  </menu-item-func>-->
+
+    </ng-template>
+  </jz-menu-container>
+</div>
+

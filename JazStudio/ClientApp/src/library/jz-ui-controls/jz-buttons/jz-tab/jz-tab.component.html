@@ -1,0 +1,5 @@
+
+<div #tabBorder class="tab-border {{state}}">
+  <!--<j3-button #tabButton routerLink="{{route}}" class="jz-button" [text]="btnTxt" (click)="menuItemSelected()"> </j3-button>-->
+  <jz-button #tabButton routerLink="{{route}}" (click)="menuItemSelected()" [text]="btnTxt" [menuType]="menuType"> </jz-button>
+</div>

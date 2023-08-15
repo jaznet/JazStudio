@@ -1,0 +1,15 @@
+<dx-popover #dxpopover
+            class={{popoverClass}}
+            [title]=popoverTitle
+            height="220"
+            width="330"
+            position="center"
+            [showTitle]="true"
+            [(visible)]="isPopupVisible"
+            contentTemplate="popupContent">
+
+  <div *dxTemplate="let data of 'popupContent'">
+    <ng-container #itemContainer *ngTemplateOutlet="currentTemplate"></ng-container>
+  </div>
+
+</dx-popover>

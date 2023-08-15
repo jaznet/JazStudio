@@ -1,0 +1,59 @@
+<div id="btn-{{palette}}" class="jz-radio" style="height:16px;width:16px">
+
+  <svg #svgPalette viewBox="0 0 16 16" width="100%" height="100%" >
+
+    <g>
+      <circle #outercircle cx="8" cy="8" r="7" stroke="transparent" stroke-width="1" fill="transparent"></circle>
+      <circle #innercircle cx="8" cy="8" r="6"
+              (mouseenter)="hover('enter')"
+              (mouseleave)="hover('leave')"
+              (click)="setPalette()" />
+      <circle #overlaycircle cx="8" cy="8" r="6"
+              style="pointer-events: none;"
+              fill="url(#3dOrb)"  />
+    </g>
+
+    <defs>
+
+      <radialGradient id="3dOrb" cx="50%" cy="50%" r="50%" fx="25%" fy="25%">
+        <stop offset="0%" stop-color="#ffffff75" />
+        <stop offset="20%" stop-color="#ffffff60" />
+        <stop offset="40%" stop-color="#ffffff48" />
+        <stop offset="60%" stop-color="#ffffff30" />
+        <stop offset="80%" stop-color="#ffffff18" />
+        <stop offset="100%" stop-color="#ffffff00" />
+      </radialGradient>
+
+      <radialGradient id="pal-onyx"
+                      cx="82.9278" cy="42.8126" r="83.1775" fx="81.3974" fy="42.7943"
+                      gradientTransform="matrix(-0.7344 -0.6788 -1.405 1.5408 140.4936 7.046)"
+                      gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:#87ABA0" />
+        <stop offset="6.962559e-02" style="stop-color:#3E8E7D" />
+        <stop offset="0.2464" style="stop-color:#357C6E" />
+        <stop offset="0.5989" style="stop-color:#1E4F47" />
+        <stop offset="1" style="stop-color:#001414" />
+      </radialGradient>
+
+    </defs>
+
+  </svg>
+
+  <!--<dx-popover #palettepopover
+              target="#btn-{{palette}}"
+              position="bottom"
+              [visible]="isPopupVisible"
+              [showTitle]="false"
+              title="{{palette}}"
+              width="56"
+              height="20">
+    <div style="font-size:8px;margin:auto">{{palette}}</div>
+  </dx-popover>
+
+  <ng-template #tooltip>
+    <div class="tooltip">
+      Tooltip content
+    </div>
+  </ng-template>
+</div>-->
+

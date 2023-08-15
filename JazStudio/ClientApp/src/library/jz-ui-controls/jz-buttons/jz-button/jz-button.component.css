@@ -1,0 +1,75 @@
+
+.j3-button-base-layer {
+  width: 100px;
+  height: 28px;
+  border-radius: 5px;
+}
+
+.j3-button-container {
+  border-radius: 5px;
+  background: linear-gradient(to bottom right,#ffffff60,#00000020);
+  width: 100px;
+}
+
+.j3-button-bevel { 
+  border-radius: 5px;
+  background: linear-gradient(to right,#ffffff30 0%, #ffffff05 3%, #ffffff05 97%, #00000066 100%);
+  width: 100%;
+}
+
+.j3-button-top-bevel {
+  border-radius: 5px;
+  background: linear-gradient(to right,#ffffff05,#ffffff15);
+  width: 100%;
+  height: 100%;
+}
+
+.j3-button {
+  width: 100%;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.j3-button-text {
+  
+  align-items: center;
+  font-size: 13px;
+  /*border: .5px solid #00000020;*/
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  background: linear-gradient(#ffffff30 0%, #ffffff05 10%, #ffffff05 90%, #00000066 100%);
+  cursor: pointer;
+}
+
+.menu-view {
+}
+
+  .menu-view.selected {
+    color: var(--jz-palette-highlight);
+  }
+
+  .menu-view.selected .j3-button-text {
+    color: var(--jz-palette-highlight);
+  }
+
+.menu-subview {
+
+}
+
+.selected.menu-subview {
+}
+
+.selected.menu-subview .j3-button-text {
+}
+
+
+
+.selected > .j3-button-text {
+  color: var(--jz-palette-color-3);
+}
+
+.selected .j3-button-text {
+  color: var(--jz-palette-highlight);
+}

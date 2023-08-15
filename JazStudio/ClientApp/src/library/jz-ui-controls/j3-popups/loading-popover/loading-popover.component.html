@@ -1,0 +1,27 @@
+
+<div class="wrapper">
+
+  <dx-popover #loadingpopover
+              [visible]="isPopupVisible"
+              position="center"
+              [showTitle]="true"
+              title="Loading ...."
+              width="480"
+              height="270"
+              [wrapperAttr]="{id: 'loadingpopup', class:'loading-popover'}">
+
+    <div class="grid-rows">
+      <div class="grid-row-fixed centered" style="flex-flow:column;align-self:center">
+        <div class="msg" style="margin-top:4px">http.get</div>
+        <div class="msg" style="align-self:center">{{url}}</div>
+      </div>
+      <div class="grid-row-fill" style="justify-content:center">
+        <div class="overlay-container" style="width:100px">
+          <lib-spinner class="overlay-layer" style="align-items:center"></lib-spinner>
+          <lib-elapsed-time class="overlay-layer" style="margin-top:-3px;margin-left:-1px;justify-content:center;align-items:center"></lib-elapsed-time>
+        </div>
+      </div>
+
+    </div>
+  </dx-popover>
+</div>
