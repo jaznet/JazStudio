@@ -469,7 +469,7 @@ export class PaletteMgrService {
 
         document.documentElement.style.setProperty('--jz-palette-color-0', 'var(--jz-palette-color-1');
 
-        document.documentElement.style.setProperty('--jz-palette-color-1', '#D7AE46');
+        document.documentElement.style.setProperty('--jz-palette-color-1', '#191905');
         document.documentElement.style.setProperty('--jz-palette-color-1-hi', '#403B3B');
         document.documentElement.style.setProperty('--jz-palette-color-1-lo', '#151414');
 
@@ -478,7 +478,7 @@ export class PaletteMgrService {
         document.documentElement.style.setProperty('--jz-palette-color-2-lo', '#272A2A');
 
         /*document.documentElement.style.setProperty('--jz-palette-color-3', '#596F62');*/
-        document.documentElement.style.setProperty('--jz-palette-color-3', '#848FA5');
+        document.documentElement.style.setProperty('--jz-palette-color-3', '#AEAE31');
         document.documentElement.style.setProperty('--jz-palette-color-3-hi', '#5F5959');
         document.documentElement.style.setProperty('--jz-palette-color-3-lo', '#353131');
 

@@ -19,7 +19,7 @@ app-root {
   width: 100%;
   height: 100%;
   font-family: varela;
-  background-color: #290E05;
+  background-color: var(--jz-palette-color-1);
 }
 
 .app-body {
@@ -27,12 +27,11 @@ app-root {
   width: 100%;
   height: 100%;
   font-family: varela;
-  background-color: #290E05;
 }
 
 .router-container {
   border-radius: 5px;
-  background-color: var(--jz-palette-color-2);
+ /* background-color: var(--jz-palette-color-2);*/
 }
 
 .sub-router-container {
