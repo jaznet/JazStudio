@@ -27,7 +27,7 @@ import { JzButtonsModule } from '../library/jz-ui-controls/jz-buttons/jz-buttons
       { path: '', component: WelcomeComponent, pathMatch: 'full' },
       {
         path: 'home',
-        loadChildren: () => import('../sections/j3-studio/j3-studio.module').then(m => m.J3StudioModule)
+        loadChildren: () => import('../sections/jaz-studio/jaz-studio.module').then(m => m.JazStudioModule)
       },
     ])
   ],

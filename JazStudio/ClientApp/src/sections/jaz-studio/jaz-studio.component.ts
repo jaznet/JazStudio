@@ -1,11 +1,11 @@
 import { Component, HostBinding, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-j3-studio',
-  templateUrl: './j3-studio.component.html',
-  styleUrls: ['./j3-studio.component.css']
+  selector: 'app-jaz-studio',
+  templateUrl: './jaz-studio.component.html',
+  styleUrls: ['./jaz-studio.component.css']
 })
-export class J3StudioComponent implements OnInit {
+export class JazStudioComponent implements OnInit {
 
   @HostBinding('class') classes = 'fit-to-parent';
 

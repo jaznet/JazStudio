@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { J3StudioComponent } from './j3-studio.component';
-import { J3StudioRouterModule } from './j3-studio-router.module';
+import { JazStudioComponent } from './jaz-studio.component';
+import { JazStudioRouterModule } from './jaz-studio-router.module';
 import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
 import { AppMenusModule } from '../../library/app-menus/app-menus.module';
 
@@ -9,16 +9,16 @@ import { AppMenusModule } from '../../library/app-menus/app-menus.module';
 
 @NgModule({
   declarations: [
-    J3StudioComponent
+    JazStudioComponent
   ],
   imports: [
     CommonModule,
-    J3StudioRouterModule,
+    JazStudioRouterModule,
     JzButtonsModule,
     AppMenusModule
   ],
   exports: [
-    J3StudioComponent
+    JazStudioComponent
   ],
 })
-export class J3StudioModule { }
+export class JazStudioModule { }

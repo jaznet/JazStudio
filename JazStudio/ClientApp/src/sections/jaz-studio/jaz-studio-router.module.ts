@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { J3StudioComponent } from './j3-studio.component';
+import { JazStudioComponent } from './jaz-studio.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: J3StudioComponent,
+    component: JazStudioComponent,
     children: [
       {
         path: '',
-        component: J3StudioComponent
+        component: JazStudioComponent
       }
     ]
   }
@@ -19,4 +19,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class J3StudioRouterModule { }
+export class JazStudioRouterModule { }
