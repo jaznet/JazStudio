@@ -17,7 +17,7 @@ export class MenuPaletteComponent implements OnInit, AfterViewInit {
   @ViewChildren(JzRadioButtonComponent) radioButtons!: QueryList<JzRadioButtonComponent>;
 
   color: string = '';
-  selectedPalette: string = 'welcome';
+  selectedPalette: string = 'gold';
   isPopupVisible: boolean = true;
 
   constructor(private appMgr: PaletteMgrService, private renderer: Renderer2, private changeDetector: ChangeDetectorRef) {

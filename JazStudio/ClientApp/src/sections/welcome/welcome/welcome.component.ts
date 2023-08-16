@@ -32,15 +32,12 @@ export class WelcomeComponent implements OnInit, AfterViewInit {
   ngOnInit(): void { }
 
   ngAfterViewInit(): void {
-    this.c1 = this.C1Ref?.nativeElement;
-    this.b2 = this.B2Ref?.nativeElement;
-    //this.app.hideMenu();
+  
   }
 
   login() {
     console.log('login');
     let r = this.router.getCurrentNavigation();
-    //  this.app.showMenu();
     this.router.navigateByUrl('/home')
   }
 

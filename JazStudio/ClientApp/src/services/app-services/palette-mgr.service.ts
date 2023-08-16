@@ -12,7 +12,7 @@ export class PaletteMgrService {
   constructor() { }
 
   InitializePalette() {
-    this.ChangePalette('welcome');
+    this.ChangePalette('gold');
   }
 
   ChangePalette(palette: string) {
