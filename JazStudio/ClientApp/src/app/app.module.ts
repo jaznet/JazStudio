@@ -8,7 +8,7 @@ import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.
 import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
 import { AppPartsModule } from '../library/app-parts/app-parts.module';
-import { WelcomeComponent } from '../sections/welcome/welcome/welcome.component';
+import { WelcomeComponent } from '../regions/welcome/welcome/welcome.component';
 import { JzButtonsModule } from '../library/jz-ui-controls/jz-buttons/jz-buttons.module';
 
 @NgModule({
@@ -27,7 +27,7 @@ import { JzButtonsModule } from '../library/jz-ui-controls/jz-buttons/jz-buttons
       { path: '', component: WelcomeComponent, pathMatch: 'full' },
       {
         path: 'home',
-        loadChildren: () => import('../sections/jaz-studio/jaz-studio.module').then(m => m.JazStudioModule)
+        loadChildren: () => import('../regions/jaz-studio/jaz-studio.module').then(m => m.JazStudioModule)
       },
     ])
   ],
