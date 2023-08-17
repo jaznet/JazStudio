@@ -11,3 +11,46 @@
     "middle-left middle-center middle-right"
     "bottom-left bottom-center bottom-right";
 }
+
+.grid3x3 > div {
+  background-color:var(--jz-palette-color-1);
+  padding:8px;
+  margin:auto;
+}
+
+/* Styles for grid items */
+.top-left {
+  grid-area: top-left;
+}
+
+.top-center {
+  grid-area: top-center;
+}
+
+.top-right {
+  grid-area: top-right;
+}
+
+.middle-left {
+  grid-area: middle-left;
+}
+
+.middle-center {
+  grid-area: middle-center;
+}
+
+.middle-right {
+  grid-area: middle-right;
+}
+
+.bottom-left {
+  grid-area: bottom-left;
+}
+
+.bottom-center {
+  grid-area: bottom-center;
+}
+
+.bottom-right {
+  grid-area: bottom-right;
+}
