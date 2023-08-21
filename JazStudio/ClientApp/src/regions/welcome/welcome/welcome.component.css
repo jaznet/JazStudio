@@ -4,13 +4,13 @@
   height: 100%;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px; /* Optional: adds some space between grid items */
+  gap: 4px; /* Optional: adds some space between grid items */
 }
 
 .grid-item {
   background-color: transparent;
   border: .5px solid #333333;
-  padding: 20px;
+  padding: 4px;
   text-align: center;
 }
 

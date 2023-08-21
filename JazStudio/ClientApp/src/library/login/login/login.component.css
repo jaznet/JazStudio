@@ -4,10 +4,10 @@ div {
 }
 
 .login-container {
+  flex-flow: column;
   width: 325px;
-  height: 650px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 4px;
   border: 1px solid #ffffff;
   border-radius: 8px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
