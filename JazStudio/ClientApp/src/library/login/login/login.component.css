@@ -7,14 +7,23 @@ div {
   flex-flow: column;
   width: 325px;
   margin: 0 auto;
-  padding: 4px;
+  padding: 12px;
   border: 1px solid #ffffff;
   border-radius: 8px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 5px rgba(256, 256, 256, 0.1);
   background-color: var(--jz-palette-color-3);
 }
 
+.metallic-box {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #DEB841, #FDF5CE);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
 .form-group {
+    flex-flow:column;
   margin-bottom: 15px;
 }
 
@@ -42,3 +51,6 @@ label {
   .btn:hover {
     background-color: #0056b3;
   }
+
+
+
