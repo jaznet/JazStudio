@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataVizMenuComponent } from './data-viz-menu/data-viz-menu.component';
+import { JzMenusModule } from '../../../library/jz-ui-controls/jz-menus/jz-menus.module';
 
 
 @NgModule({
@@ -8,7 +9,8 @@ import { DataVizMenuComponent } from './data-viz-menu/data-viz-menu.component';
     DataVizMenuComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    JzMenusModule
   ],
   exports: [
     DataVizMenuComponent
