@@ -12,6 +12,7 @@ import { WelcomeComponent } from '../regions/welcome/welcome/welcome.component';
 import { JzButtonsModule } from '../library/jz-ui-controls/jz-buttons/jz-buttons.module';
 import { LoginModule } from '../library/login/login.module';
 import { WelcomeModule } from '../regions/welcome/welcome.module';
+import { AppRouterModule } from './app-router/app-router.module';
 
 @NgModule({
   declarations: [
@@ -27,13 +28,8 @@ import { WelcomeModule } from '../regions/welcome/welcome.module';
     JzButtonsModule,
     LoginModule,
     WelcomeModule,
-    RouterModule.forRoot([
-      { path: '', component: WelcomeComponent, pathMatch: 'full' },
-      {
-        path: 'home',
-        loadChildren: () => import('../regions/jaz-studio/jaz-studio.module').then(m => m.JazStudioModule)
-      },
-    ])
+    RouterModule,
+    AppRouterModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: AuthorizeInterceptor, multi: true }

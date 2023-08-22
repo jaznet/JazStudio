@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { JzButtonsModule } from '../jz-ui-controls/jz-buttons/jz-buttons.module';
+import { AppRouterModule } from '../../app/app-router/app-router.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +15,8 @@ import { JzButtonsModule } from '../jz-ui-controls/jz-buttons/jz-buttons.module'
   imports: [
     CommonModule,
     ReactiveFormsModule,
-    JzButtonsModule
+    JzButtonsModule,
+    RouterModule
   ],
   exports: [
     LoginComponent]
