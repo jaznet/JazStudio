@@ -12,7 +12,7 @@ import { AppEventsService } from '../../../../services/app-services/app-events.s
   templateUrl: './jz-menu-container.component.html',
   styleUrls: ['./jz-menu-container.component.css']
 })
-export class MenuContainerComponent implements OnInit, AfterViewInit {
+export class JzMenuContainerComponent implements OnInit, AfterViewInit {
 
   @HostBinding('class') classes = 'menu-container';
   @ViewChild('menuPanel', { static: false }) menuPanelRef: ElementRef | any;
@@ -29,10 +29,8 @@ export class MenuContainerComponent implements OnInit, AfterViewInit {
 
   private renderer: Renderer2;
   currentTemplate: TemplateRef<any> | any;
-  //menuPanel: HTMLDivElement | any;
   menuEvents: MenuEventsService | any;
   menuContainer: HTMLDivElement | any;
-  /*subscription: Subscription | any;*/
 
   constructor(
     private appEvents: AppEventsService,
@@ -42,23 +40,16 @@ export class MenuContainerComponent implements OnInit, AfterViewInit {
   {
     this.renderer = rendererFactory.createRenderer(null, null);
     this.menuEvents = menuEvents;
-   // console.log(this.menuName);
   }
 
-  ngOnInit() {
-  //  console.log(this.menuName);
-  }
+  ngOnInit() { }
 
   ngAfterViewInit(): void {
-
- //   console.log(this.menuName);
-
     this.appEvents.viewSelectedEvent.subscribe((view:any) => {
       this.renderer.addClass(this.menuPanelRef.nativeElement, view);
     });
 
     this.menuEvents.menuItemSelectedEvent.subscribe((selectedItem: MenuItemBaseComponent) => {
-     // console.log('selectedItem: ', selectedItem.menuItem);
       this.onMenuItemSelected(selectedItem);
     });
 
@@ -77,7 +68,6 @@ export class MenuContainerComponent implements OnInit, AfterViewInit {
     if (selectedItem.menuName !== this.menuName) return;
     console.log('menu item',this.jztabs);
     this.jztabs.forEach((menuitem: JzTabComponent) => {
-      //console.log('forEach TAB', menuitem);
       menuitem._tab.nativeElement.classList.remove('selected');
       menuitem._btn.selection('deselect');
 

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-viz-menu.component.css']
 })
 export class DataVizMenuComponent {
-
+  menuType:string | undefined;
 }

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MenuBaseComponent } from './jz-menu-base/jz-menu-base.component';
-import { MenuContainerComponent } from './jz-menu-container/jz-menu-container.component';
+import { JzMenuContainerComponent } from './jz-menu-container/jz-menu-container.component';
 import { MenuItemBaseComponent } from './j3-menu-item-base/j3-menu-item-base.component';
 
 
@@ -9,7 +9,7 @@ import { MenuItemBaseComponent } from './j3-menu-item-base/j3-menu-item-base.com
 @NgModule({
   declarations: [
     MenuBaseComponent,
-    MenuContainerComponent,
+    JzMenuContainerComponent,
     MenuItemBaseComponent
   ],
   imports: [
@@ -17,7 +17,7 @@ import { MenuItemBaseComponent } from './j3-menu-item-base/j3-menu-item-base.com
   ],
   exports: [
     MenuBaseComponent,
-    MenuContainerComponent,
+    JzMenuContainerComponent,
     MenuItemBaseComponent
   ],
 })
