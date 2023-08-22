@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DataVizComponent } from './data-viz/data-viz.component';
+import { DataVizRoutingModule } from './data-viz/data-viz-routing.module';
 
 
 
@@ -9,7 +10,8 @@ import { DataVizComponent } from './data-viz/data-viz.component';
     DataVizComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    DataVizRoutingModule
   ],
   exports: [
     DataVizComponent

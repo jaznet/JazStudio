@@ -1,9 +1,9 @@
 
 import { ChangeDetectorRef, Component, ContentChildren, ElementRef, Input, OnInit, QueryList, Renderer2 } from '@angular/core';
-import { MenuBaseComponent } from '../../jz-ui-controls/jz-menus/jz-menu-base/jz-menu-base.component';
-import { MenuItemBaseComponent } from '../../jz-ui-controls/jz-menus/j3-menu-item-base/j3-menu-item-base.component';
 import { AppEventsService } from '../../../services/app-services/app-events.service';
-import { MenuEventsService } from '../../jz-ui-controls/jz-menus/jz-menu-events.service';
+import { MenuBaseComponent } from '../../../library/jz-ui-controls/jz-menus/jz-menu-base/jz-menu-base.component';
+import { MenuItemBaseComponent } from '../../../library/jz-ui-controls/jz-menus/j3-menu-item-base/j3-menu-item-base.component';
+import { MenuEventsService } from '../../../library/jz-ui-controls/jz-menus/jz-menu-events.service';
 
 @Component({
   selector: 'main-menu',

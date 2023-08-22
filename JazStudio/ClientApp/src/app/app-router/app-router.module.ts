@@ -12,10 +12,10 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('../../regions/jaz-studio/jaz-studio.module').then(m => m.JazStudioModule)
   },
-  //{
-  //  path: 'dataviz',
-  // /* loadChildren: () => import('../../regions/data-viz/data-viz.module').then(m => m.DataVizComponent)*/
-  //},
+  {
+    path: 'dataviz',
+    loadChildren: () => import('../../regions/data-viz/data-viz.module').then(m => m.DataVizModule)
+  },
 
 ]
 
