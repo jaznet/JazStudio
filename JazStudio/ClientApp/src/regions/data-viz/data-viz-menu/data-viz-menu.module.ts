@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { DataVizMenuComponent } from './data-viz-menu/data-viz-menu.component';
 
 
-
 @NgModule({
   declarations: [
     DataVizMenuComponent

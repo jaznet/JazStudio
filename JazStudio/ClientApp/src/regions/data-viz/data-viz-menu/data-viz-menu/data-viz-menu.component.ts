@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-data-viz-menu',
+  selector: 'data-viz-menu',
   templateUrl: './data-viz-menu.component.html',
   styleUrls: ['./data-viz-menu.component.css']
 })
