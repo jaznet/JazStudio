@@ -34,9 +34,9 @@ label {
 
 .form-control {
   width: 100%;
-  padding: 10px;
-  border: 1px solid var(--jz-palette-color-2);
-  border-radius: 3px;
+  border: 1px solid var(--jz-palette-color-1);
+  background-color: var(--jz-palette-color-5);
+  border-radius: 8px;
 }
 
 .btn {
