@@ -473,12 +473,11 @@ export class PaletteMgrService {
         document.documentElement.style.setProperty('--jz-palette-color-1-hi', '#403B3B');
         document.documentElement.style.setProperty('--jz-palette-color-1-lo', '#151414');
 
-        document.documentElement.style.setProperty('--jz-palette-color-2', '#DEB841');
+        document.documentElement.style.setProperty('--jz-palette-color-2', '#54461D');
         document.documentElement.style.setProperty('--jz-palette-color-2-hi', '#3B4040');
         document.documentElement.style.setProperty('--jz-palette-color-2-lo', '#272A2A');
 
-        /*document.documentElement.style.setProperty('--jz-palette-color-3', '#596F62');*/
-        document.documentElement.style.setProperty('--jz-palette-color-3', '#AEAE31');
+        document.documentElement.style.setProperty('--jz-palette-color-3', '#DEB841');
         document.documentElement.style.setProperty('--jz-palette-color-3-hi', '#5F5959');
         document.documentElement.style.setProperty('--jz-palette-color-3-lo', '#353131');
 
@@ -486,7 +485,7 @@ export class PaletteMgrService {
         document.documentElement.style.setProperty('--jz-palette-color-4-hi', '#A7A0A0');
         document.documentElement.style.setProperty('--jz-palette-color-4-lo', '#7F7676');
 
-        document.documentElement.style.setProperty('--jz-palette-color-5', '#D1B96B');
+        document.documentElement.style.setProperty('--jz-palette-color-5', '#ffffdb');
         document.documentElement.style.setProperty('--jz-palette-color-5-hi', '#D9C482');
         document.documentElement.style.setProperty('--jz-palette-color-5-lo', '#6A6262');
 

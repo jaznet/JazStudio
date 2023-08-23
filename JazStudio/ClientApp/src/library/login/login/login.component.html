@@ -1,7 +1,9 @@
 
 <div class="login-container">
+  <img src="../assets/logos/JazLogo-Master-5b.svg" height="24" />
   <h2>Login</h2>
-  <form [formGroup]="loginForm"> 
+  <form [formGroup]="loginForm">
+
     <div class="form-group">
       <label for="username">Username:</label>
       <input type="text" id="username" formControlName="username" class="form-control">
@@ -10,6 +12,6 @@
       <label for="password">Password:</label>
       <input type="password" id="password" formControlName="password" class="form-control">
     </div>
-    <button type="submit" routerLink="/home"  (click)="login()" style="width:48px;height:24px">Login</button>
+    <button type="submit" routerLink="/home" (click)="login()" style="width:48px;height:24px">Login</button>
   </form>
 </div>

@@ -19,6 +19,11 @@
     align-items: center;
   }
 
+  .grid-item.bottom {
+    justify-content: center;
+    align-items: end;
+  }
+
 .j3-button-container {
   border-radius: 5px;
   background: linear-gradient(to bottom right,#ffffff60,#00000020);
