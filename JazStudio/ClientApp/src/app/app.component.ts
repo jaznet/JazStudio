@@ -1,5 +1,6 @@
 import { Component, HostBinding } from '@angular/core';
 import { PaletteMgrService } from '../services/app-services/palette-mgr.service';
+import { AppService } from './app.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,10 @@ export class AppComponent {
 
   title = 'app';
 
-  constructor(private palette: PaletteMgrService) {
+  constructor(
+    private app:AppService,
+    private palette: PaletteMgrService)
+  {
     this.palette.InitializePalette();
     console.log('app-root');
   }

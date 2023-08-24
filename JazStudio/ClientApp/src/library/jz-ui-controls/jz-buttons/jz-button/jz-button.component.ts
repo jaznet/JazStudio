@@ -10,11 +10,9 @@ export class JzButtonComponent implements OnInit, AfterViewInit {
   @Input() menuType: string = 'menu';
   @Input() text: string = 'txt';
   @Input() color: string = 'var(--jz-palette-color-5)';
- /* @Input() height: string = '32px';*/
- /* @Input() width: string = '100px';*/
   btnTxt = 'j3';
-  height: string = '32px';
-  width: string = '100px';
+  @Input() height: string = '32px';
+  @Input() width: string = '100px';
 
   constructor(
     private element: ElementRef,
