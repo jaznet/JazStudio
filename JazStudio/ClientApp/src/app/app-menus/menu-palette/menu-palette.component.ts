@@ -2,8 +2,8 @@
 import { AfterViewInit, ChangeDetectorRef, Component, HostBinding, OnInit, QueryList, Renderer2, ViewChild, ViewChildren } from '@angular/core';
 /*import { PaletteMgrService } from '../../app-parts/app-services/palette-mgr.service';*/
 import { DxPopoverComponent } from 'devextreme-angular';
-import { JzRadioButtonComponent } from '../../jz-ui-controls/jz-buttons/jz-radio-button/jz-radio-button.component';
 import { PaletteMgrService } from '../../../services/app-services/palette-mgr.service';
+import { JzRadioButtonComponent } from '../../../library/jz-ui-controls/jz-buttons/jz-radio-button/jz-radio-button.component';
 
 @Component({
   selector: 'menu-palette',

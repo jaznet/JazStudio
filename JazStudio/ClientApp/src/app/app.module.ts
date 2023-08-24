@@ -7,12 +7,12 @@ import { AppComponent } from './app.component';
 import { ApiAuthorizationModule } from 'src/api-authorization/api-authorization.module';
 import { AuthorizeGuard } from 'src/api-authorization/authorize.guard';
 import { AuthorizeInterceptor } from 'src/api-authorization/authorize.interceptor';
-import { AppPartsModule } from '../library/app-parts/app-parts.module';
 import { WelcomeComponent } from '../regions/welcome/welcome/welcome.component';
 import { JzButtonsModule } from '../library/jz-ui-controls/jz-buttons/jz-buttons.module';
 import { WelcomeModule } from '../regions/welcome/welcome.module';
 import { AppRouterModule } from './app-router/app-router.module';
 import { LoginModule } from './app-login/login.module';
+import { AppPartsModule } from './app-parts/app-parts.module';
 
 @NgModule({
   declarations: [
