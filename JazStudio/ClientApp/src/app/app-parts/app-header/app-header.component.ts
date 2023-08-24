@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AppService } from '../../app.service';
 
 @Component({
@@ -7,6 +7,7 @@ import { AppService } from '../../app.service';
   styleUrls: ['./app-header.component.css']
 })
 export class AppHeaderComponent {
+  @Input() visible:string = 'visible';
   constructor(private app: AppService) {
     this.app.toggleMenuEvent.subscribe((menu: any) => {
       console.log('gotcha', menu);
