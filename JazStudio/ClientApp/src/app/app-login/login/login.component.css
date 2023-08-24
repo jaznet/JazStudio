@@ -3,6 +3,14 @@ div {
     color:black;
 }
 
+.j3-button {
+  color: black;
+}
+
+.j3-button > .j3-button-text {
+  color: black;
+}
+
 .login-container {
   flex-flow: column;
   width: 325px;

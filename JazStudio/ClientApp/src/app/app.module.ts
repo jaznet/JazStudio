@@ -10,9 +10,9 @@ import { AuthorizeInterceptor } from 'src/api-authorization/authorize.intercepto
 import { AppPartsModule } from '../library/app-parts/app-parts.module';
 import { WelcomeComponent } from '../regions/welcome/welcome/welcome.component';
 import { JzButtonsModule } from '../library/jz-ui-controls/jz-buttons/jz-buttons.module';
-import { LoginModule } from '../library/login/login.module';
 import { WelcomeModule } from '../regions/welcome/welcome.module';
 import { AppRouterModule } from './app-router/app-router.module';
+import { LoginModule } from './app-login/login.module';
 
 @NgModule({
   declarations: [

@@ -39,8 +39,6 @@ export class JzTabComponent extends MenuItemBaseComponent implements OnInit, Aft
   _btn!: JzButtonComponent;
   button!: HTMLDivElement
   orient = 'v';
-
-
   menuItem = 'login';
   
   constructor(
