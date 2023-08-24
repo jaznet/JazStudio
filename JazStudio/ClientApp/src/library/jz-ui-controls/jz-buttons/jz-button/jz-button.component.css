@@ -40,7 +40,6 @@
   justify-content: center;
   background: linear-gradient(#ffffff30 0%, #ffffff05 10%, #ffffff05 90%, #00000066 100%);
   cursor: pointer;
-  color: var(--jz-palette-color-5);
 }
 
 .menu-view {
