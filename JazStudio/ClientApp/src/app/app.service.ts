@@ -14,6 +14,6 @@ export class AppService {
   }
 
   showMenu() {
-    this.toggleMenuEvent.emit('show');
+     this.toggleMenuEvent.emit('show');
   }
 }

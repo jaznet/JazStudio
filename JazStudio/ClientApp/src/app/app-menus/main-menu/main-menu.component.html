@@ -1,9 +1,11 @@
-<!--<div #menuContainer class="main-menu-container" style="margin-left:8px">-->
+<div #menuContainer class="main-menu-container" style="margin-left:8px">
 
 <jz-menu-container class="menu-horizontal menu-view"
+                  
                    [orientation]="'horizontal'"
                    [menuType]="'menu-view'"
-                   [menuName]="'menu-main'">
+                   [menuName]="'menu-main'"
+                   >
 
   <!--<jz-tab [state]="'selected'" [menuItem]="'home'" [menuName]="menuName"-->
   <jz-tab  [menuItem]="'home'" [menuName]="menuName"
@@ -26,4 +28,4 @@
           [orientation]="'horizontal'" [route]="'/admin'" [btnTxt]="'Administration'"></jz-tab>
 
 </jz-menu-container>
-<!--</div>-->
+</div>

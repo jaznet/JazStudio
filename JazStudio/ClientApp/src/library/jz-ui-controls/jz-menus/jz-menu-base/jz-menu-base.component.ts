@@ -9,6 +9,7 @@ export class MenuBaseComponent implements OnInit {
 
   orientation: string = 'default';
   menuName: string = 'base';
+  visibility: string = 'collapsed';
 
   constructor() { }
 

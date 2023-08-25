@@ -19,9 +19,10 @@
 
     <div #mainMenuContainer
          class="grid-row-fixed main-menu-container"
-         style="visibility: collapse;justify-content:flex-start; border-top-color: var(--jz-palette-color-3)">
+         [ngStyle]="{'visibility':isMainMenuVisible ? 'visible' : 'hidden'}"
+         >
 
-      <main-menu #mainMenu style="margin-left:28px"></main-menu>
+      <main-menu #mainMenu ></main-menu>
 
     </div>
   </div>

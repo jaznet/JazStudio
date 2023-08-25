@@ -34,6 +34,7 @@ export class JzMenuContainerComponent implements OnInit, AfterViewInit {
 
   constructor(
     private appEvents: AppEventsService,
+    private ele:ElementRef,
     private rendererFactory: RendererFactory2,
     menuEvents: MenuEventsService,
     private changeDetector: ChangeDetectorRef)
@@ -42,7 +43,9 @@ export class JzMenuContainerComponent implements OnInit, AfterViewInit {
     this.menuEvents = menuEvents;
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    //this.renderer.setStyle(this.ele, 'visibility', 'collapse');
+  }
 
   ngAfterViewInit(): void {
     this.appEvents.viewSelectedEvent.subscribe((view:any) => {
