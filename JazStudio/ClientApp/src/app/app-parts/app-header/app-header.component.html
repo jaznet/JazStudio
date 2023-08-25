@@ -1,9 +1,9 @@
 
 <div #appHeader class="app-header">
 
-  <div  [ngStyle]="{'visibility':isMainMenuVisible ? 'visible' : 'hidden'}"
-       class="grid-col-fixed image-container" style="visibility:collapse">
-    <img src="../assets/logos/JazLogo-Master-2.svg" height="40" />
+  <div [ngStyle]="{'visibility':isMainMenuVisible ? 'visible' : 'hidden'}"
+       class="grid-col-fixed logo-container" >
+    <img src="../assets/logos/JazLogo-Master-5a.svg" height="52" />
   </div>
 
   <div class="grid-col-fill">
@@ -19,12 +19,10 @@
     </div>
 
     <div #mainMenuContainer
-           [ngStyle]="{'visibility':isMainMenuVisible ? 'visible' : 'hidden'}"
-         class="grid-row-fixed main-menu-container"
-       
-         >
+         [ngStyle]="{'visibility':isMainMenuVisible ? 'visible' : 'hidden'}"
+         class="grid-row-fixed main-menu-container">
 
-      <main-menu #mainMenu ></main-menu>
+      <main-menu #mainMenu></main-menu>
 
     </div>
   </div>
