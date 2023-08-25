@@ -31,8 +31,6 @@ export class MainMenuComponent extends MenuBaseComponent implements OnInit {
     console.log('1main menu', this.menuContainer)
   }
 
-  ngOnInit() {
-   console.log('2main menu',this.menuContainer)
-  }
+  ngOnInit() { }
 
 }

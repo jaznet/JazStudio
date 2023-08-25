@@ -8,13 +8,17 @@ import { AppService } from '../../app.service';
 })
 export class AppHeaderComponent implements OnInit, AfterViewInit {
   @ViewChild('mainMenuContainer') mainMenuContainer!: ElementRef;
+
+  isLogoVisible: boolean= false;
   isMainMenuVisible: boolean = false;
+
   constructor(private app: AppService) { }
 
   ngOnInit(): void { }
 
   ngAfterViewInit(): void {
     this.app.toggleMenuEvent.subscribe((menu: any) => {
+      this.isLogoVisible = menu === 'show' ? true : false;
       this.isMainMenuVisible = menu === 'show' ? true : false;
     })
   }
