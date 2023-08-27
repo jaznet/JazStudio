@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { J3ButtonComponent } from './j3-button.component';
+import { J3ButtonComponent } from './jz-button.component';
 
 describe('J3ButtonComponent', () => {
   let component: J3ButtonComponent;

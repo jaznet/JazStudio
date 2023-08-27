@@ -72,11 +72,11 @@
         background-color: var(--jz-palette-highlight);
       }
 
-.selected > .j3-button-text {
+.selected > .jz-button-text {
   color: var(--jz-palette-color-3);
 }
 
-.selected  .j3-button-text {
+.selected  .jz-button-text {
   color: var(--jz-palette-color-3);
 }
 
