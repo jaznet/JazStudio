@@ -46,12 +46,12 @@
 }
 
   .menu-view.selected {
-    color: var(--jz-palette-highlight);
+    color: var(--jz-palette-color-3);
   }
 
-  .menu-view.selected .j3-button-text {
-    color: var(--jz-palette-highlight);
-  }
+    .menu-view.selected .j3-button-text {
+      color: var(--jz-palette-color-3);
+    }
 
 .menu-subview {
 
@@ -70,5 +70,5 @@
 }
 
 .selected .j3-button-text {
-  color: var(--jz-palette-highlight);
+  color: var(--jz-palette-color-3);
 }
