@@ -19,7 +19,7 @@ div {
   border: 1px solid var(--jz-palette-color-5);
   border-radius: 8px;
   box-shadow: 0px 0px 5px rgba(256, 256, 256, 0.5);
-  background-color: var(--jz-palette-color-3);
+  background-color: var(--jz-palette-color-4);
 }
 
 .metallic-box {
