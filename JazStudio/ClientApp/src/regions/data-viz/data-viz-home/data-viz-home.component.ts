@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./data-viz-home.component.css']
 })
 export class DataVizHomeComponent {
-
+  constructor() { }
 }

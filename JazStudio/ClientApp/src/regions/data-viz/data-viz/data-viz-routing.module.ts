@@ -11,7 +11,7 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        component: DataVizComponent
+        component: DataVizHomeComponent
       },
       {
         path: 'chorodash',

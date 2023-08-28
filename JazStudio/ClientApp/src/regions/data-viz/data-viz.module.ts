@@ -4,6 +4,7 @@ import { DataVizComponent } from './data-viz/data-viz.component';
 import { DataVizRoutingModule } from './data-viz/data-viz-routing.module';
 import { DataVizMenuModule } from './data-viz-menu/data-viz-menu.module';
 import { DataVizHomeComponent } from './data-viz-home/data-viz-home.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -14,6 +15,7 @@ import { DataVizHomeComponent } from './data-viz-home/data-viz-home.component';
   ],
   imports: [
     CommonModule,
+    RouterModule,
     DataVizMenuModule,
     DataVizRoutingModule
   ],
