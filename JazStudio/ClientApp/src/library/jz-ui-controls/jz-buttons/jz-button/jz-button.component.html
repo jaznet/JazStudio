@@ -1,9 +1,10 @@
 
-<div class="jz-button-base-layer {{menuType}}" [style.width]="width"  [style.height]="height">
+<div class="jz-button-base-layer {{menuType}}"
+     [style.backgroundColor]="colorBkg" [style.width]="width"  [style.height]="height">
   <div class="jz-button-bevel">
     <div #btn class="jz-button" id="'btn1" (click)="login()">
 
-      <div class="jz-button-text" [style.color]="color">{{text}}</div>
+      <div class="jz-button-text" [style.color]="colorTxt" [style.font-size]="fontSize">{{text}}</div>
 
     </div>
   </div>

@@ -11,6 +11,10 @@ div {
   color: black;
 }
 
+.jz-button-text {
+    font-size:16px;
+}
+
 .login-container {
   flex-flow: column;
   width: 325px;
@@ -31,7 +35,7 @@ div {
 }
 
 .form-group {
-    flex-flow:column;
+  flex-flow:column;
   margin-bottom: 15px;
 }
 

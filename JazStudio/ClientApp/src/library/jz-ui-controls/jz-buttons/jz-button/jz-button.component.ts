@@ -9,7 +9,9 @@ export class JzButtonComponent implements OnInit, AfterViewInit {
   @HostBinding('class') classes = 'fit-to-content j3Button';
   @Input() menuType: string = 'menu';
   @Input() text: string = 'txt';
-  @Input() color: string = 'var(--jz-palette-color-5)';
+  @Input() colorTxt: string = 'var(--jz-palette-color-5)';
+  @Input() colorBkg: string = 'var(--jz-palette-color-1)';
+  @Input() fontSize: string = '13px';
   btnTxt = 'j3';
   @Input() height: string = '32px';
   @Input() width: string = '100px';

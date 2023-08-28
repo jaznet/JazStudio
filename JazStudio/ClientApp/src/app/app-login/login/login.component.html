@@ -14,7 +14,8 @@
       <input type="password" id="password" formControlName="password" class="form-control">
     </div>
 
-    <jz-button class="jz-button" [text]="'Enter'" [color]="'black'" type="submit" routerLink="/home" (click)="login()" >Login</jz-button>
+    <jz-button class="jz-button" [text]="'Enter'" type="submit" routerLink="/home" (click)="login()"
+               [colorTxt]="'black'" [colorBkg]="'var(--jz-palette-color-4'" [fontSize]="'16px'">Login</jz-button>
 
   </form>
 </div>
