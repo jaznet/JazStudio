@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DataVizComponent } from './data-viz.component';
+import { ChorodashComponent } from '../../../views/chorodash/chorodash/chorodash.component';
 
 const routes: Routes = [
   {
@@ -10,6 +11,10 @@ const routes: Routes = [
       {
         path: 'home',
         component: DataVizComponent
+      },
+      {
+        path: 'chorodash',
+        component: ChorodashComponent
       }
     ]
   }
