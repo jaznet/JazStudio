@@ -14,7 +14,6 @@ export class DataVizComponent extends JzRegionBase implements OnInit, AfterViewI
   constructor(private host: AppService) {
       super();
   }
- 
 
   ngOnInit(): void {
     this.host.showMenu();
