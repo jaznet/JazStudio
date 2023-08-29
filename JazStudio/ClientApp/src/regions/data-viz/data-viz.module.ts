@@ -3,18 +3,23 @@ import { CommonModule } from '@angular/common';
 import { DataVizComponent } from './data-viz/data-viz.component';
 import { DataVizHomeComponent } from './data-viz-home/data-viz-home.component';
 import { RouterModule } from '@angular/router';
-import { DataVizMenuModule } from './data-viz-nav/data-viz-menu.module';
 import { DataVizRoutingModule } from './data-viz-nav/data-viz-routing.module';
+import { DataVizMenuComponent } from './data-viz-nav/data-viz-menu/data-viz-menu.component';
+import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
+import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
 
 @NgModule({
   declarations: [
     DataVizComponent,
-    DataVizHomeComponent
+    DataVizHomeComponent,
+    DataVizMenuComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    DataVizMenuModule,
+    JzMenusModule,
+    JzButtonsModule,
+ /*   DataVizMenuComponent,*/
     DataVizRoutingModule
   ],
   exports: [
