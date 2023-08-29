@@ -1,31 +1,27 @@
 <div #menuContainer class="main-menu-container" style="margin-left:8px">
 
-<jz-menu-container class="menu-horizontal menu-view"
-                  
-                   [orientation]="'horizontal'"
-                   [menuType]="'menu-view'"
-                   [menuName]="'menu-main'"
-                   >
+  <jz-menu-container class="menu-horizontal menu-view"
+                     [menuType]="'menu-view'"
+                     [menuName]="'menu-main'">
 
-  <!--<jz-tab [state]="'selected'" [menuItem]="'home'" [menuName]="menuName"-->
-  <jz-tab [menuItem]="'home'" [menuName]="menuName"
-          [menuType]="'menu-view'"
-          [orientation]="'horizontal'" [route]="'/home'" [btnTxt]="'Homex'"></jz-tab>
-  <jz-tab [menuItem]="'dataviz'" [menuName]="menuName"
-          [menuType]="'menu-view'"
-          [orientation]="'horizontal'" [route]="'/dataviz'" [btnTxt]="'Data Viz'"></jz-tab>
-  <jz-tab [menuItem]="'backoffice'" [menuName]="menuName"
-          [menuType]="'menu-view'"
-          [orientation]="'horizontal'" [route]="'/backoffice'" [btnTxt]="'Backoffice'"></jz-tab>
-  <jz-tab [menuItem]="'sandbox'" [menuName]="menuName"
-          [menuType]="'menu-view'"
-          [orientation]="'horizontal'" [route]="'/sandbox'" [btnTxt]="'Sandbox'"></jz-tab>
-  <jz-tab [menuItem]="'architecture'" [menuName]="menuName"
-          [menuType]="'menu-view'"
-          [orientation]="'horizontal'" [route]="'/architecture'" [btnTxt]="'Architecture'"></jz-tab>
-  <jz-tab [menuItem]="'admin'" [menuName]="menuName"
-          [menuType]="'menu-view'"
-          [orientation]="'horizontal'" [route]="'/admin'" [btnTxt]="'Administration'"></jz-tab>
+    <!--<jz-tab [state]="'selected'" [menuItem]="'home'" [menuName]="menuName"-->
+    <jz-tab [menuItem]="'home'" [menuName]="menuName" [menuType]="'menu-view'" 
+            [route]="'/home'" [btnTxt]="'Home'"></jz-tab>
 
-</jz-menu-container>
+    <jz-tab [menuItem]="'dataviz'" [menuName]="menuName" [menuType]="'menu-view'"
+            [route]="'/dataviz'" [btnTxt]="'Dataviz'"></jz-tab>
+
+    <jz-tab [menuItem]="'backoffice'" [menuName]="menuName" [menuType]="'menu-view'"
+            [route]="'/backoffice'" [btnTxt]="'Backoffice'"></jz-tab>
+
+    <jz-tab [menuItem]="'sandbox'" [menuName]="menuName" [menuType]="'menu-view'"
+            [route]="'/sandbox'" [btnTxt]="'Sandbox'"></jz-tab>
+
+    <jz-tab [menuItem]="'architecture'" [menuName]="menuName" [menuType]="'menu-view'"
+            [route]="'/architecture'" [btnTxt]="'Architecture'"></jz-tab>
+
+    <jz-tab [menuItem]="'admin'" [menuName]="menuName" [menuType]="'menu-view'"
+            [route]="'/admin'" [btnTxt]="'Administration'"></jz-tab>
+
+  </jz-menu-container>
 </div>
