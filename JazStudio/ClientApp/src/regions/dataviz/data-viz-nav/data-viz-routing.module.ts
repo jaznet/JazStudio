@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DataVizComponent } from '../data-viz/data-viz.component';
+import { DatavizViewComponent } from '../dataviz-view/dataviz-view.component';
 import { ChorodashComponent } from '../../../views/chorodash/chorodash/chorodash.component';
 import { DataVizHomeComponent } from '../data-viz-home/data-viz-home.component';
 
 const routes: Routes = [
   {
     path: '',
-    component: DataVizComponent,
+    component: DatavizViewComponent,
     children: [
       {
         path: 'home',

@@ -1,16 +1,18 @@
-import { AfterViewInit, Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, HostBinding, OnInit } from '@angular/core';
 import { JzRegionBase } from '../../../library/jz-regions/jz-region-base';
 import { AppService } from '../../../app/app.service';
 
 @Component({
-  selector: 'app-sandbox',
-  templateUrl: './sandbox.component.html',
-  styleUrls: ['./sandbox.component.css']
+  selector: 'app-dataviz-view',
+  templateUrl: './dataviz-view.component.html',
+  styleUrls: ['./dataviz-view.component.css']
 })
-export class SandboxComponent extends JzRegionBase implements OnInit, AfterViewInit  {
+export class DatavizViewComponent extends JzRegionBase implements OnInit, AfterViewInit {
+
+  @HostBinding('class') classes = 'fit-to-parent';
 
   constructor(private host: AppService) {
-    super();
+      super();
   }
 
   ngOnInit(): void {
@@ -22,4 +24,5 @@ export class SandboxComponent extends JzRegionBase implements OnInit, AfterViewI
     this.host.showMenu();
     console.log('Method not implemented.');
   }
+
 }
