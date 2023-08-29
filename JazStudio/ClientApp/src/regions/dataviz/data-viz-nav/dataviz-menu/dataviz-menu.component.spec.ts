@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DataVizMenuComponent } from './data-viz-menu.component';
+import { DataVizMenuComponent } from './dataviz-menu.component';
 
 describe('DataVizMenuComponent', () => {
   let component: DataVizMenuComponent;
