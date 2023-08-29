@@ -1,18 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { BackofficeComponent } from './backoffice/backoffice.component';
+import { BackofficeViewComponent } from './backoffice-view/backoffice-view.component';
+import { BackofficeHomeComponent } from './backoffice-home/backoffice-home.component';
 
 
 
 @NgModule({
   declarations: [
-    BackofficeComponent
+    BackofficeViewComponent,
+    BackofficeHomeComponent,
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    BackofficeComponent
+    BackofficeViewComponent,
+    BackofficeHomeComponent,
   ]
 })
 export class BackofficeModule { }
