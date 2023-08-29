@@ -19,7 +19,6 @@ import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.mo
     RouterModule,
     JzMenusModule,
     JzButtonsModule,
- /*   DataVizMenuComponent,*/
     DataVizRoutingModule
   ],
   exports: [

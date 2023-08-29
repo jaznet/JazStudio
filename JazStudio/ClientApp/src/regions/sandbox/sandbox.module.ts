@@ -2,21 +2,26 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SandboxComponent } from './sandbox/sandbox.component';
 import { RouterModule } from '@angular/router';
-import { SandboxMenuModule } from './sandbox-nav/sandbox-menu.module';
-
-
+import { SandboxMenuComponent } from './sandbox-nav/sandbox-menu/sandbox-menu.component';
+import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
+import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
+import { SandboxRoutingModule } from './sandbox-nav/sandbox-routing.module';
 
 @NgModule({
   declarations: [
-    SandboxComponent
+    SandboxComponent,
+    SandboxMenuComponent
   ],
   imports: [
     CommonModule,
     RouterModule,
-    SandboxMenuModule
+    JzMenusModule,
+    JzButtonsModule,
+    SandboxRoutingModule
   ],
   exports: [
-    SandboxComponent
+    SandboxComponent,
+    SandboxMenuComponent
   ]
 })
 export class SandboxModule { }
