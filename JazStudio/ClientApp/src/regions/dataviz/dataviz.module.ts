@@ -6,7 +6,7 @@ import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-butt
 import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
 import { DatavizViewComponent } from './dataviz-view/dataviz-view.component';
 import { DatavizMenuComponent } from './dataviz-menu/dataviz-menu.component';
-import { DatavizRoutingModule } from './dataviz-routes/dataviz-routing.module';
+import { DatavizRoutingModule } from './dataviz-routing/dataviz-routing.module';
 
 @NgModule({
   declarations: [
