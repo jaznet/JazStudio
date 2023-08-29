@@ -30,7 +30,7 @@ const routes: Routes = [
   },
   {
     path: 'admin',
-    loadChildren: () => import('../../regions/sandbox/sandbox.module').then(m => m.SandboxModule)
+    loadChildren: () => import('../../regions/admin/admin.module').then(m => m.AdminModule)
   },
 ]
 
