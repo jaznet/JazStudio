@@ -1,18 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ArchitectureComponent } from './architecture/architecture.component';
+import { ArchitectureViewComponent } from './architecture-view/architecture-view.component';
 
 
 
 @NgModule({
   declarations: [
-    ArchitectureComponent
+    ArchitectureViewComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
-    ArchitectureComponent
+    ArchitectureViewComponent
   ]
 })
 export class ArchitectureModule { }

@@ -1,13 +1,14 @@
+
 import { AfterViewInit, Component, HostBinding, OnInit } from '@angular/core';
-import { JzRegionBase } from '../../../library/jz-regions/jz-region-base';
 import { AppService } from '../../../app/app.service';
+import { JzRegionBaseComponent } from '../../../library/jz-regions/jz-region-base/jz-region-base.component';
 
 @Component({
   selector: 'app-admin-view',
   templateUrl: './admin-view.component.html',
   styleUrls: ['./admin-view.component.css']
 })
-export class AdminViewComponent extends JzRegionBase implements OnInit, AfterViewInit {
+export class AdminViewComponent extends JzRegionBaseComponent implements OnInit, AfterViewInit {
   @HostBinding('class') classes = 'fit-to-parent';
 
   constructor(private host: AppService) {
@@ -16,7 +17,7 @@ export class AdminViewComponent extends JzRegionBase implements OnInit, AfterVie
 
   ngOnInit(): void {
     this.host.showMenu();
-    console.log("AdminComponent");
+    console.log("AdminViewComponent");
   }
 
   ngAfterViewInit(): void {

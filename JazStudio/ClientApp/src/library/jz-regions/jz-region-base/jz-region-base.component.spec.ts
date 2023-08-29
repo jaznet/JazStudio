@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArchitectureComponent } from './architecture.component';
+import { JzRegionBaseComponent } from './jz-region-base.component';
 
-describe('ArchitectureComponent', () => {
-  let component: ArchitectureComponent;
-  let fixture: ComponentFixture<ArchitectureComponent>;
+describe('JzRegionBaseComponent', () => {
+  let component: JzRegionBaseComponent;
+  let fixture: ComponentFixture<JzRegionBaseComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ArchitectureComponent ]
+      declarations: [ JzRegionBaseComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ArchitectureComponent);
+    fixture = TestBed.createComponent(JzRegionBaseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
