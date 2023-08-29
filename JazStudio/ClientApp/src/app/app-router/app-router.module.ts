@@ -10,7 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('../../regions/jaz-studio/jaz-studio.module').then(m => m.JazStudioModule)
+    loadChildren: () => import('../../regions/jazstudio/jaz-studio.module').then(m => m.JazStudioModule)
   },
   {
     path: 'dataviz',
