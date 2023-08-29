@@ -30,6 +30,7 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\app\login\" />
+    <Folder Include="ClientApp\src\regions\administration\" />
     <Folder Include="ClientApp\src\views\" />
   </ItemGroup>
 

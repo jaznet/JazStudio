@@ -17,7 +17,19 @@ const routes: Routes = [
     loadChildren: () => import('../../regions/dataviz/dataviz.module').then(m => m.DatavizModule)
   },
   {
+    path: 'backoffice',
+    loadChildren: () => import('../../regions/backoffice/backoffice.module').then(m => m.BackofficeModule)
+  },
+  {
     path: 'sandbox',
+    loadChildren: () => import('../../regions/sandbox/sandbox.module').then(m => m.SandboxModule)
+  },
+  {
+    path: 'architecture',
+    loadChildren: () => import('../../regions/architecture/architecture.module').then(m => m.ArchitectureModule)
+  },
+  {
+    path: 'admin',
     loadChildren: () => import('../../regions/sandbox/sandbox.module').then(m => m.SandboxModule)
   },
 ]
