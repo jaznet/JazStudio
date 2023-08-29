@@ -16,7 +16,10 @@ const routes: Routes = [
     path: 'dataviz',
     loadChildren: () => import('../../regions/data-viz/data-viz.module').then(m => m.DataVizModule)
   },
-
+  {
+    path: 'sandbox',
+    loadChildren: () => import('../../regions/sandbox/sandbox.module').then(m => m.SandboxModule)
+  },
 ]
 
 @NgModule({

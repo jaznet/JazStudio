@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SandboxComponent } from './sandbox/sandbox.component';
+import { RouterModule } from '@angular/router';
+import { SandboxMenuModule } from './sandbox-nav/sandbox-menu.module';
 
 
 
@@ -9,7 +11,12 @@ import { SandboxComponent } from './sandbox/sandbox.component';
     SandboxComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule,
+    SandboxMenuModule
+  ],
+  exports: [
+    SandboxComponent
   ]
 })
 export class SandboxModule { }
