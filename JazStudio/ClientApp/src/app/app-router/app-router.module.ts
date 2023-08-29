@@ -14,7 +14,7 @@ const routes: Routes = [
   },
   {
     path: 'dataviz',
-    loadChildren: () => import('../../regions/data-viz/dataviz.module').then(m => m.DatavizModule)
+    loadChildren: () => import('../../regions/dataviz/dataviz.module').then(m => m.DatavizModule)
   },
   {
     path: 'sandbox',
