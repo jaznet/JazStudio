@@ -17,9 +17,9 @@ import { DatavizRoutingModule } from './dataviz-routing/dataviz-routing.module';
   imports: [
     CommonModule,
     RouterModule,
+    DatavizRoutingModule,
     JzMenusModule,
     JzButtonsModule,
-    DatavizRoutingModule
   ],
   exports: [
     DatavizViewComponent

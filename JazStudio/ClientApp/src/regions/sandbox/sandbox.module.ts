@@ -15,9 +15,9 @@ import { SandboxRoutingModule } from './sandbox-nav/sandbox-routing.module';
   imports: [
     CommonModule,
     RouterModule,
+    SandboxRoutingModule,
     JzMenusModule,
     JzButtonsModule,
-    SandboxRoutingModule
   ],
   exports: [
     SandboxComponent,

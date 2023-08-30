@@ -6,6 +6,8 @@ import { ArchitectureHomeComponent } from './architecture-home/architecture-home
 import { ArchitectureMenuComponent } from './architecture-menu/architecture-menu.component';
 import { RouterModule } from '@angular/router';
 import { ArchitectureRoutingModule } from './architecture-routing/architecture-routing.module';
+import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
+import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { ArchitectureRoutingModule } from './architecture-routing/architecture-r
   imports: [
     CommonModule,
     RouterModule,
-    ArchitectureRoutingModule
+    ArchitectureRoutingModule,
+    JzMenusModule,
+    JzButtonsModule,
   ],
   exports: [
     ArchitectureViewComponent,

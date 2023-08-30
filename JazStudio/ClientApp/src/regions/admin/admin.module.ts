@@ -5,6 +5,8 @@ import { AdminHomeComponent } from './admin-home/admin-home.component';
 import { AdminMenuComponent } from './admin-menu/admin-menu.component';
 import { RouterModule } from '@angular/router';
 import { AdminRoutingModule } from './admin-routing/admin-routing.module';
+import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
+import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
 
 
 
@@ -18,7 +20,9 @@ import { AdminRoutingModule } from './admin-routing/admin-routing.module';
   imports: [
     CommonModule,
     RouterModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    JzMenusModule,
+    JzButtonsModule,
   ]
 })
 export class AdminModule { }
