@@ -11,18 +11,10 @@ export class ArchitectureViewComponent extends JzRegionBaseComponent implements 
 
   @HostBinding('class') classes = 'fit-to-parent';
 
-  constructor(private host: AppService) {
-    super();
+  constructor(host: AppService) {
+    super(host);
   }
 
-  ngOnInit(): void {
-    this.host.showMenu();
-    console.log("DataVizComponent");
-  }
 
-  ngAfterViewInit(): void {
-    this.host.showMenu();
-    console.log('Method not implemented.');
-  }
 
 }

@@ -9,17 +9,10 @@ import { JzRegionBaseComponent } from '../../../library/jz-regions/jz-region-bas
 })
 export class SandboxComponent extends JzRegionBaseComponent implements OnInit, AfterViewInit  {
 
-  constructor(private host: AppService) {
-    super();
+  constructor(host: AppService) {
+    super(host);
   }
 
-  ngOnInit(): void {
-    this.host.showMenu();
-    console.log("DataVizComponent");
-  }
 
-  ngAfterViewInit(): void {
-    this.host.showMenu();
-    console.log('Method not implemented.');
-  }
+
 }

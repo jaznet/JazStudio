@@ -11,17 +11,9 @@ export class BackofficeViewComponent extends JzRegionBaseComponent implements On
 
   @HostBinding('class') classes = 'fit-to-parent';
 
-  constructor(private host: AppService) {
-    super();
+  constructor(host: AppService) {
+    super(host);
   }
 
-  ngOnInit(): void {
-    this.host.showMenu();
-    console.log("BackofficeViewComponent");
-  }
 
-  ngAfterViewInit(): void {
-    this.host.showMenu();
-    console.log('Method not implemented.');
-  }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AppService } from '../../../app/app.service';
 
 @Component({
   selector: 'app-jz-region-base',
@@ -7,4 +8,16 @@ import { Component } from '@angular/core';
 })
 export class JzRegionBaseComponent {
 
+  constructor(private host: AppService) {
+   
+  }
+
+  ngOnInit(): void {
+ 
+  }
+
+  ngAfterViewInit(): void {
+    this.host.showMenu();
+    console.log("RegionBaseComponent - AfterViewInit");
+  }
 }
