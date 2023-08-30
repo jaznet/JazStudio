@@ -1,1 +1,12 @@
-<p>administration works!</p>
+
+<div class="grid-cols" style="background-color:var(--jz-palette-color-1)">
+
+  <div #menuContainer class="grid-col-fixed sub-menu-panel visualization left">
+    <admin-menu></admin-menu>
+  </div>
+
+  <div #viewRouter class="grid-col-fill sub-router-container">
+    <router-outlet></router-outlet>
+  </div>
+
+</div>
