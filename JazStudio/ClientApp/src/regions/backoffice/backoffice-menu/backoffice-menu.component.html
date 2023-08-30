@@ -1,1 +1,23 @@
-<p>backoffice-menu works!</p>
+
+<div #menuContainer>
+  <jz-menu-container [menuName]="'dataviz'"
+                     [orientation]="'vertical'"
+                     [menuType]="'menu-subview'"
+                     type="view">
+
+    <div class="menu-panel-title">
+      <div style="margin-left:5px">DataViz</div>
+    </div>
+
+    <jz-tab [route]="'/dataviz/home'" [btnTxt]="'Home'"
+            class="menu-vertical menu-subview selected"
+            [state]="'selected'" [menuItem]="'home'" [orientation]="'vertical'"></jz-tab>
+
+    <jz-tab [route]="'/dataviz/chorodash'" [btnTxt]="'Choro dash'"
+            [menuType]="'menu-subview'"
+            [menuItem]="'chorodash'"
+            [menuName]="'Dataviz'"
+            [orientation]="'vertical'"></jz-tab>
+
+  </jz-menu-container>
+</div>

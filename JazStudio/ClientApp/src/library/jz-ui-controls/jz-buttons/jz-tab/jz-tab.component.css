@@ -26,11 +26,12 @@
   padding: 8px ;
   border: 2px solid transparent);
   color: var(--jz-palette-text-2);
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
 
   .tab-border.selected {
-    background-color:var(--jz-palette-color-2);
+    background-color: var(--jz-palette-color-2);
+    border: 1px solid var(--jz-palette-color-5);
   }
 
   .tab-border.vertical {

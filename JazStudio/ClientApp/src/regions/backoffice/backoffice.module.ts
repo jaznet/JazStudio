@@ -5,6 +5,8 @@ import { BackofficeHomeComponent } from './backoffice-home/backoffice-home.compo
 import { BackofficeMenuComponent } from './backoffice-menu/backoffice-menu.component';
 import { RouterModule } from '@angular/router';
 import { BackofficeRoutingModule } from './backoffice-routing/backoffice-routing.module';
+import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
+import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
 
 
 
@@ -17,7 +19,9 @@ import { BackofficeRoutingModule } from './backoffice-routing/backoffice-routing
   imports: [
     CommonModule,
     RouterModule,
-    BackofficeRoutingModule
+    BackofficeRoutingModule,
+    JzMenusModule,
+    JzButtonsModule,
   ],
   exports: [
     BackofficeViewComponent,
