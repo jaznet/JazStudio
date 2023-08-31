@@ -10,6 +10,10 @@ const routes: Routes = [
     component: BackofficeViewComponent,
     children: [
       {
+        path: '',
+        component: BackofficeHomeComponent
+      },
+      {
         path: 'home',
         component: BackofficeHomeComponent
       },

@@ -10,6 +10,10 @@ const routes: Routes = [
     component: ArchitectureViewComponent,
     children: [
       {
+        path: '',
+        component: ArchitectureHomeComponent
+      },
+      {
         path: 'home',
         component: ArchitectureHomeComponent
       },

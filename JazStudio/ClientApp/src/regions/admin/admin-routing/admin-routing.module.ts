@@ -10,6 +10,10 @@ const routes: Routes = [
     component: AdminViewComponent,
     children: [
       {
+        path: '',
+        component: AdminHomeComponent
+      },
+      {
         path: 'home',
         component: AdminHomeComponent
       },

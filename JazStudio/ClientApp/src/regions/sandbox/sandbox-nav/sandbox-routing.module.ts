@@ -10,6 +10,10 @@ const routes: Routes = [
     component: SandboxComponent,
     children: [
       {
+        path: '',
+        component: SandboxHomeComponent
+      },
+      {
         path: 'home',
         component: SandboxHomeComponent
       },

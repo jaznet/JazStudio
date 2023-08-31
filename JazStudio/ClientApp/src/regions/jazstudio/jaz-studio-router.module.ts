@@ -8,6 +8,10 @@ const routes: Routes = [
     component: JazStudioComponent,
     children: [
       {
+        path: '',
+        component: JazStudioComponent
+      },
+      {
         path: 'home',
         component: JazStudioComponent
       }

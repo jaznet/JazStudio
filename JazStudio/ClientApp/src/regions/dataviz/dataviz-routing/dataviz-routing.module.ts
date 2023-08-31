@@ -10,6 +10,10 @@ const routes: Routes = [
     component: DatavizViewComponent,
     children: [
       {
+        path: '',
+        component: DataVizHomeComponent
+      },
+      {
         path: 'home',
         component: DataVizHomeComponent
       },
