@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-sandbox-home',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./sandbox-home.component.css']
 })
 export class SandboxHomeComponent {
-
+  @HostBinding('class') classes = 'fit-to-parent';
 }

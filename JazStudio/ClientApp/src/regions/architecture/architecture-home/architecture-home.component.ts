@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-architecture-home',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./architecture-home.component.css']
 })
 export class ArchitectureHomeComponent {
-
+  @HostBinding('class') classes = 'fit-to-parent';
 }

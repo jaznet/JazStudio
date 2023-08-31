@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-backoffice-home',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./backoffice-home.component.css']
 })
 export class BackofficeHomeComponent {
-
+  @HostBinding('class') classes = 'fit-to-parent';
 }
