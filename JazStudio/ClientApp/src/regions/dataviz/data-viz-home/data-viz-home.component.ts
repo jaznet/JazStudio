@@ -7,5 +7,6 @@ import { Component, HostBinding } from '@angular/core';
 })
 export class DataVizHomeComponent {
   @HostBinding('class') classes = 'fit-to-parent';
-  constructor() { }
+  constructor() {
+  }
 }

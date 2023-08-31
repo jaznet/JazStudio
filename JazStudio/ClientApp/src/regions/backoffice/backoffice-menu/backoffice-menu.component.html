@@ -1,6 +1,6 @@
 
 <div #menuContainer>
-  <jz-menu-container [menuName]="'dataviz'"
+  <jz-menu-container [menuName]="'backoffice'"
                      [orientation]="'vertical'"
                      [menuType]="'menu-subview'"
                      type="view">
@@ -9,14 +9,14 @@
       <div style="margin-left:5px">DataViz</div>
     </div>
 
-    <jz-tab [route]="'/dataviz/home'" [btnTxt]="'Home'"
+    <jz-tab [route]="'/backoffice/home'" [btnTxt]="'Home'"
             class="menu-vertical menu-subview selected"
             [state]="'selected'" [menuItem]="'home'" [orientation]="'vertical'"></jz-tab>
 
-    <jz-tab [route]="'/dataviz/chorodash'" [btnTxt]="'Choro dash'"
+    <jz-tab [route]="'/backoffice/finance'" [btnTxt]="'Finance'"
             [menuType]="'menu-subview'"
             [menuItem]="'chorodash'"
-            [menuName]="'Dataviz'"
+            [menuName]="'backoffice'"
             [orientation]="'vertical'"></jz-tab>
 
   </jz-menu-container>

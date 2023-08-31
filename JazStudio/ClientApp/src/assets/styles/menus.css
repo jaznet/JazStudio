@@ -45,7 +45,7 @@
   }
 
 .menu-panel-title {
-  color: var(--jz-palette-text-1);
+  color: var(--jz-palette-color-1);
   font-size: 12px;
   font-weight: 600;
   justify-content: center;
@@ -53,7 +53,7 @@
 }
 
   .menu-panel-title div {
-    color: var(--jz-palette-text-1);
+    color: var(--jz-palette-color-1);
   }
 
 .menu-panel-sub-title {
