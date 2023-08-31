@@ -27,7 +27,13 @@ app-root {
   width: 100%;
   height: 100%;
   font-family: varela;
-  border: 1px solid lightblue;
+ /* border: 1px solid lightblue;*/
+ /* padding-top:8px;*/
+}
+
+.app-header {
+ /* border: 1px solid yellow;*/
+  margin-bottom: 6px;
 }
 
 .router-container {

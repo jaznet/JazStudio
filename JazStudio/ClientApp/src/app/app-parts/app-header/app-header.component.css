@@ -1,8 +1,12 @@
-div {
-    border:1px solid #202020;
+.menu-container {
+  margin-bottom: -13px;
+  z-index:10;
 }
 
-.image-container {
+.menu-tab-panel {
+}
+
+  .image-container {
     margin:auto;
 }
 
@@ -13,9 +17,6 @@ div {
   margin-left: 8px;
 }
 
-.app-header {
-  border: 1px solid yellow;
-  margin-bottom: 6px;
-}
+
 
 
