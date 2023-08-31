@@ -1,11 +1,12 @@
 
 <div #approot id="approot" class="grid-rows app-root">
-  <app-header #appheadercomp class="grid-row-fixed"></app-header>
 
-  <div #body class="grid-row-fill router-container">
+  <app-header #appheadercomp class="grid-row-fixed app-header" ></app-header>
+
+  <div #body class="grid-row-fill router-container app-body" >
     <router-outlet></router-outlet>
   </div>
 
-  <app-footer #appfootercomp class="grid-row-fixed"></app-footer>
+  <app-footer #appfootercomp class="grid-row-fixed app-footer"></app-footer>
 </div>
 
