@@ -48,7 +48,11 @@ export class TopoJsonService {
 
         this.isAlbersReady();
 
-      });
+      })
+      .catch((error) => {
+        console.error("An error occurred while loading the JSON data:", error);
+      })
+      ;
 
   }
 
