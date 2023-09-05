@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ChoroUSAComponent } from './choro-usa/choro-usa.component';
+import { PopupsModule } from '../../library/jz-ui-controls/j3-popups/popups.module';
 
 
 
@@ -9,7 +10,8 @@ import { ChoroUSAComponent } from './choro-usa/choro-usa.component';
     ChoroUSAComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    PopupsModule
   ]
 })
 export class ChoroUSAModule { }

@@ -1,7 +1,7 @@
 import { AfterContentInit, AfterViewInit, ChangeDetectorRef, Component, OnInit, ViewChild } from '@angular/core';
 import { DxPopupComponent } from 'devextreme-angular';
-import { FormContactusComponent } from '../../../../forms/form-contactus/form-contactus.component';
 import { PopupBaseComponent } from '../popup-base/popup-base.component';
+import { FormContactusComponent } from '../../jz-forms/form-contactus/form-contactus.component';
 
 @Component({
   selector: 'popup-contact-us',

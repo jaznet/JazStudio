@@ -9,9 +9,6 @@ import { PopupsMgrComponent } from './popups-mgr/popups-mgr.component';
 import { HttpErrorPopoverComponent } from './http-error-popover/http-error-popover.component';
 import { LoadingPopoverComponent } from './loading-popover/loading-popover.component';
 import { FormsModule } from '@angular/forms';
-import { LibraryModule } from '../../../library.module';
-import { ElapsedTimeComponent } from '../../../elapsed-time/elapsed-time.component';
-import { SpinnerComponent } from '../../../spinner/spinner.component';
 
 
 @NgModule({
@@ -29,7 +26,6 @@ import { SpinnerComponent } from '../../../spinner/spinner.component';
     DxPopoverModule,
     DxPopupModule,
     FormsModule,
-    LibraryModule
   ],
   exports: [
     PopupContactUsComponent,
@@ -38,9 +34,7 @@ import { SpinnerComponent } from '../../../spinner/spinner.component';
     HttpErrorPopoverComponent,
     PopupsMgrComponent,
     LoadingPopoverComponent,
-    ElapsedTimeComponent,
     DxPopoverComponent,
-    SpinnerComponent
   ]
 })
 export class PopupsModule { }
