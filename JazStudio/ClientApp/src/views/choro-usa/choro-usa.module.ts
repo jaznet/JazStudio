@@ -12,6 +12,9 @@ import { PopupsModule } from '../../library/jz-ui-controls/j3-popups/popups.modu
   imports: [
     CommonModule,
     PopupsModule
+  ],
+  exports: [
+    ChoroUSAComponent
   ]
 })
 export class ChoroUSAModule { }
