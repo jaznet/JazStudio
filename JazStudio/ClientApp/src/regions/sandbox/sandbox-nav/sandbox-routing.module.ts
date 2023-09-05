@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { SandboxComponent } from '../sandbox/sandbox.component';
 import { SandboxHomeComponent } from '../sandbox-home/sandbox-home.component';
+import { ChoroUSAComponent } from '../../../views/choro-usa/choro-usa/choro-usa.component';
 
 const routes: Routes = [
   {
@@ -17,10 +18,10 @@ const routes: Routes = [
         path: 'home',
         component: SandboxHomeComponent
       },
-      //{
-      //  path: 'chorodash',
-      //  component: ChorodashComponent
-      //}
+      {
+        path: 'chorousa',
+        component: ChoroUSAComponent
+      }
     ]
   }
 ];

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { J3FrameworkComponent } from './jaz-studio.component';
+import { J3FrameworkComponent } from './jaz-studio-view.component';
 
 describe('J3FrameworkComponent', () => {
   let component: J3FrameworkComponent;
