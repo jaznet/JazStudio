@@ -19,6 +19,7 @@ import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-butt
     RouterModule
   ],
   exports: [
-    LoginComponent]
+    LoginComponent
+  ]
 })
 export class LoginModule { }

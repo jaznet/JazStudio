@@ -1,4 +1,5 @@
 
+
 .jz-button {
   width: 100%;
   height:100%;
@@ -32,9 +33,9 @@
 }
 
 .jz-button-text {
+    color: var(--jz-palette-text-1);
   align-items: center;
   font-size: 13px;
-  /*border: .5px solid #00000020;*/
   border-radius: 5px;
   width: 100%;
   height: 100%;
@@ -47,17 +48,14 @@
 }
 
   .menu-view.selected {
-    color: var(--jz-palette-color-3);
+    background-color: var(--jz-palette-color-4);
   }
 
     .menu-view.selected .jz-button-text {
-      color: var(--jz-palette-color-3);
+      color: var(--jz-palette-text-4);
     }
 
-
-
 .menu-subview {
-
 }
 
 .selected.menu-subview {
@@ -70,8 +68,12 @@
   background-color: var(--jz-palette-color-4);
 }
 
+.menu-subview .selected .jz-button-text {
+  color: var(--jz-palette-text-4);
+}
+
 .selected > .jz-button-text {
-  color: var(--jz-palette-color-3);
+  color: var(--jz-palette-text-4);
 }
 
 .selected .jz-button-text {

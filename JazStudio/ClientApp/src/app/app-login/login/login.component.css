@@ -7,6 +7,10 @@ div {
   color: black;
 }
 
+.jz-button.login {
+  color: black;
+}
+
 .jz-button > .jz-button-text {
   color: black;
 }
