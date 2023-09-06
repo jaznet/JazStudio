@@ -11,6 +11,10 @@ div {
   color: black;
 }
 
+  .jz-button.login .jz-button-text {
+    color: black;
+  }
+
 .jz-button > .jz-button-text {
   color: black;
 }

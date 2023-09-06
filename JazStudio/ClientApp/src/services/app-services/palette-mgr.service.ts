@@ -19,6 +19,27 @@ export class PaletteMgrService {
     this.paletteChangedEvent.emit(palette);
     switch (palette) {
 
+      case 'gold':
+
+        document.documentElement.style.setProperty('--jz-palette-color-1', '#191905');
+        document.documentElement.style.setProperty('--jz-palette-color-2', '#202C1D');
+        document.documentElement.style.setProperty('--jz-palette-color-3', '#4F4C45');
+        document.documentElement.style.setProperty('--jz-palette-color-4', '#B69120');
+        document.documentElement.style.setProperty('--jz-palette-color-5', '#ffffdb');
+
+        document.documentElement.style.setProperty('--jz-palette-border', 'var(--jz-palette-color-3');
+        document.documentElement.style.setProperty('--jz-palette-text-1', 'var(--jz-palette-color-5');
+        document.documentElement.style.setProperty('--jz-palette-text-2', '#D7AE46');
+        document.documentElement.style.setProperty('--jz-palette-text-3', 'black');
+        document.documentElement.style.setProperty('--jz-palette-text-4', 'black');
+        document.documentElement.style.setProperty('--jz-palette-text-5', 'white');
+
+        document.documentElement.style.setProperty('--popup-color-1', '#496F5D');
+        document.documentElement.style.setProperty('--popup-color-2', '#679267');
+        document.documentElement.style.setProperty('--popup-color-3', '#CF142B');
+
+        break;
+
       case 'welcome':
         document.documentElement.style.setProperty('--jz-palette-border', 'black');
         document.documentElement.style.setProperty('--jz-palette-text-1', '#336699');
@@ -452,35 +473,7 @@ export class PaletteMgrService {
         document.documentElement.style.setProperty('--popup-color-3', '#CF142B');
         break;
 
-      case 'gold':
-
-        document.documentElement.style.setProperty('--jz-palette-color-1', '#191905');
-        document.documentElement.style.setProperty('--jz-palette-color-2', '#202C1D');
-        document.documentElement.style.setProperty('--jz-palette-color-3', '#4F4C45');
-        document.documentElement.style.setProperty('--jz-palette-color-4', '#D9AC26');
-        document.documentElement.style.setProperty('--jz-palette-color-5', '#ffffdb');
-
-        document.documentElement.style.setProperty('--jz-palette-border', 'var(--jz-palette-color-3');
-        document.documentElement.style.setProperty('--jz-palette-text-1', 'var(--jz-palette-color-5');
-        document.documentElement.style.setProperty('--jz-palette-text-2', '#D7AE46');
-        document.documentElement.style.setProperty('--jz-palette-text-3', 'black');
-        document.documentElement.style.setProperty('--jz-palette-text-4', 'black');
-        document.documentElement.style.setProperty('--jz-palette-text-5', 'white');
-        document.documentElement.style.setProperty('--jz-palette-menu-title', '#7F7676');
-
-        document.documentElement.style.setProperty('--jz-palette-color-0', '#496F5D');
-
-        document.documentElement.style.setProperty('--popup-color-1', '#496F5D');
-        document.documentElement.style.setProperty('--popup-color-2', '#679267');
-        document.documentElement.style.setProperty('--popup-color-3', '#CF142B');
-
-        document.documentElement.style.setProperty('--jz-palette-color-0', 'var(--jz-palette-color-1');
-
-  
-
-     
-   
-        break;
+    
 
       case 'red':
         document.documentElement.style.setProperty('--jz-palette-border', 'var(--jz-palette-color-3)');
