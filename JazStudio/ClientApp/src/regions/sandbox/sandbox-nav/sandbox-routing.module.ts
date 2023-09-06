@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SandboxComponent } from '../sandbox/sandbox.component';
 import { SandboxHomeComponent } from '../sandbox-home/sandbox-home.component';
 import { ChoroUSAComponent } from '../../../views/choro-usa/choro-usa/choro-usa.component';
+import { SyncDashComponent } from '../../../views/sync-dash/sync-dash/sync-dash.component';
 
 const routes: Routes = [
   {
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'chorousa',
         component: ChoroUSAComponent
+      },
+      {
+        path: 'syncdash',
+        component: SyncDashComponent
       }
     ]
   }

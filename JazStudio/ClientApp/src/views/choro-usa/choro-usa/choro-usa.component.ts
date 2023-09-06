@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, HostBinding, ViewChild } from '@angular/core';
 import { TopoJsonService } from '../../../library/jz-choropleths/services/topo-json.service';
 import * as d3 from 'd3';
 import * as d3Select from 'd3-selection';
@@ -15,6 +15,7 @@ import * as topojson from 'topojson';
   styleUrls: ['./choro-usa.component.css']
 })
 export class ChoroUSAComponent {
+  @HostBinding('class') classes = 'fit-to-parent';
   @ViewChild('USA', { static: true }) USA_Ref: ElementRef | undefined;
   @ViewChild('USA_svg', { static: true }) USA_svg_Ref!: ElementRef | any;
   @ViewChild('USA_grp', { static: true }) USA_grp_Ref!: ElementRef | any;
