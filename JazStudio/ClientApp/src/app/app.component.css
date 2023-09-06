@@ -1,4 +1,7 @@
 
-.jaz {
-
+.sub-router-container {
+  margin-right: 8px;
+  border: 1px solid var(--jz-palette-border);
+  border-radius: 5px;
+  background-color: var(--jz-palette-color-4);
 }

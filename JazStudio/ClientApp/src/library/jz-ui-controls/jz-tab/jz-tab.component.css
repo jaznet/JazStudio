@@ -31,7 +31,7 @@
 
   .tab-border.selected {
     background-color: var(--jz-palette-color-2);
-    border: 1px solid var(--jz-palette-color-5);
+    border: 1px solid var(--jz-palette-border);
     border-bottom: var(--jz-palette-color-2);
   }
 
