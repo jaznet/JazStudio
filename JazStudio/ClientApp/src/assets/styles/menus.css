@@ -1,4 +1,6 @@
-
+.menu-view.selected {
+  color: var(--jz-palette-color-3);
+}
 .menu-view {
 }
 
@@ -9,6 +11,10 @@
 
   .menu-view .selected .jz-button-text {
     color: var(--jz-palette-highlight);
+  }
+
+  .menu-view .selected {
+    color: var(--jz-palette-color-4);
   }
 
 .menu-subview {
@@ -27,7 +33,7 @@
   }
 
   .menu-subview .selected .jz-button-base-layer {
-    background-color: var(--jz-palette-color-2);
+    background-color: var(--jz-palette-color-4);
   }
 
 .menu-container {

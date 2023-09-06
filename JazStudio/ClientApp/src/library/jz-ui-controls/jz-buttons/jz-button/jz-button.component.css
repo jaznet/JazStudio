@@ -31,8 +31,6 @@
   height: 100%;
 }
 
-
-
 .jz-button-text {
   align-items: center;
   font-size: 13px;
@@ -56,6 +54,8 @@
       color: var(--jz-palette-color-3);
     }
 
+
+
 .menu-subview {
 
 }
@@ -66,7 +66,9 @@
 .selected.menu-subview .jz-button-text {
 }
 
-
+.menu-subview .selected .jz-button-base-layer {
+  background-color: var(--jz-palette-color-4);
+}
 
 .selected > .jz-button-text {
   color: var(--jz-palette-color-3);

@@ -5,7 +5,9 @@
 .menu-container {
 }
 
-
+.menu-subview .selected .jz-button-base-layer {
+  background-color: var(--jz-palette-color-5);
+}
 
   .menu-container.menu-subview {
   }

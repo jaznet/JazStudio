@@ -75,8 +75,9 @@ export class JzMenuContainerComponent implements OnInit, AfterViewInit {
       menuitem._btn.selection('deselect');
 
       if (menuitem.menuItem === selectedItem.menuItem) {
-        menuitem._tab.nativeElement.classList.add('selected');
         menuitem._btn.selection('select');
+        menuitem._tab.nativeElement.classList.add('selected');
+      
       }
     });
 
