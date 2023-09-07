@@ -6,6 +6,7 @@ import { SandboxMenuComponent } from './sandbox-nav/sandbox-menu/sandbox-menu.co
 import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
 import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
 import { SandboxRoutingModule } from './sandbox-nav/sandbox-routing.module';
+import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { SandboxRoutingModule } from './sandbox-nav/sandbox-routing.module';
     RouterModule,
     SandboxRoutingModule,
     JzMenusModule,
-    JzButtonsModule,
+    JzButtonsModule
   ],
   exports: [
     SandboxComponent,
