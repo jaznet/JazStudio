@@ -31,6 +31,8 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/@syncfusion/ej2-base/styles/material.css",
+              "node_modules/@syncfusion/ej2-angular-layouts/styles/material.css",
               "src/styles.css",
               "src/assets/styles/app.css",
               "src/assets/styles/flex-grids.css",
