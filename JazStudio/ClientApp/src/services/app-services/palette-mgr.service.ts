@@ -22,7 +22,7 @@ export class PaletteMgrService {
       case 'gold':
 
         document.documentElement.style.setProperty('--jz-palette-color-1', '#191905');
-        document.documentElement.style.setProperty('--jz-palette-color-2', '#202C1D');
+        document.documentElement.style.setProperty('--jz-palette-color-2', '#3C382A');
         document.documentElement.style.setProperty('--jz-palette-color-3', '#4F4C45');
         document.documentElement.style.setProperty('--jz-palette-color-4', '#B69120');
         document.documentElement.style.setProperty('--jz-palette-color-5', '#ffffdb');
