@@ -1,4 +1,6 @@
-
+div {
+  color: black;
+}
 
 .jz-button {
   width: 100%;
@@ -32,6 +34,8 @@
   height: 100%;
 }
 
+
+
 .jz-button-text {
     color: var(--jz-palette-text-1);
   align-items: center;
@@ -43,6 +47,14 @@
   background: linear-gradient(#ffffff30 0%, #ffffff05 10%, #ffffff05 90%, #00000066 100%);
   cursor: pointer;
 }
+
+.jz-button.login {
+  color: black;
+}
+
+  .jz-button.login > .jz-button-text {
+    color: black;
+  }
 
 .menu-view {
 }

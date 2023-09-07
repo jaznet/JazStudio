@@ -17,7 +17,6 @@ import { AppPartsModule } from './app-parts/app-parts.module';
 @NgModule({
   declarations: [
     AppComponent,
-  
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
