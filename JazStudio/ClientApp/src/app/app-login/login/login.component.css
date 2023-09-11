@@ -8,9 +8,10 @@ div {
   background-color: var(--palette-color-5);
 }
 
-.jz-button.login {
-  color: black;
-}
+  .jz-button.login {
+    color: black;
+    background-color: var(--palette-color-5);
+  }
 
   .jz-button.login .jz-button-text {
     color: black;
