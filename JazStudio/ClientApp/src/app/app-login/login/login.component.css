@@ -5,6 +5,7 @@ div {
 
 .jz-button {
   color: black;
+  background-color: var(--palette-color-5);
 }
 
 .jz-button.login {
@@ -27,7 +28,7 @@ div {
   flex-flow: column;
   width: 325px;
   margin: 0 auto;
-  padding: 4px 16px 16px 16px;
+  padding: 16px 16px 16px 16px;
   border: 1px solid var(--jz-palette-color-5);
   border-radius: 8px;
   box-shadow: 0px 0px 5px rgba(256, 256, 256, 0.5);
