@@ -9,6 +9,7 @@ import { PopupsMgrComponent } from './popups-mgr/popups-mgr.component';
 import { HttpErrorPopoverComponent } from './http-error-popover/http-error-popover.component';
 import { LoadingPopoverComponent } from './loading-popover/loading-popover.component';
 import { FormsModule } from '@angular/forms';
+import { JzMiscModule } from '../jz-misc/jz-misc.module';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { FormsModule } from '@angular/forms';
     DxPopoverModule,
     DxPopupModule,
     FormsModule,
+    JzMiscModule
   ],
   exports: [
     PopupContactUsComponent,

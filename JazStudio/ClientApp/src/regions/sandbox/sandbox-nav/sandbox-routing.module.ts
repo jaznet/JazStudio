@@ -17,13 +17,15 @@ const routes: Routes = [
         component: SandboxHomeComponent
       },
       {
+        path: 'chorousa',
+       /* loadChildren: () => import('../../../views/choro-usa/choro-usa.module').then(m => m.ChoroUSAModule)*/
+        component: ChoroUSAComponent
+      },
+      {
         path: 'home',
         component: SandboxHomeComponent
       },
-      {
-        path: 'chorousa',
-        component: ChoroUSAComponent
-      },
+     
       {
         path: 'syncdash',
         component: SyncDashComponent
