@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostBinding, OnInit } from '@angular/core';
 
 @Component({
   selector: 'jz-dashboard-container',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jz-dashboard-container.component.css']
 })
 export class JzDashboardContainerComponent implements OnInit {
-
+  @HostBinding('class') classes = 'fit-to-parent grid-rows';
   constructor() { }
 
   ngOnInit(): void {

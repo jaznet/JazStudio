@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostBinding } from '@angular/core';
 
 @Component({
   selector: 'app-jz-dash-view',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./jz-dash-view.component.css']
 })
 export class JzDashViewComponent {
-
+  @HostBinding('class') classes = 'fit-to-parent';
 }
