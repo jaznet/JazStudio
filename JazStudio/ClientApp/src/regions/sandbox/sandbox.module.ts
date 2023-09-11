@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SandboxComponent } from './sandbox/sandbox.component';
 import { RouterModule } from '@angular/router';
 import { SandboxMenuComponent } from './sandbox-nav/sandbox-menu/sandbox-menu.component';
-import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
+import { JzMenusModule } from '../../library/jz-components/jz-menus/jz-menus.module';
 import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
 import { SandboxRoutingModule } from './sandbox-nav/sandbox-routing.module';
 import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';

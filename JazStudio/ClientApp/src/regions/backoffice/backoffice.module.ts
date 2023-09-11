@@ -6,7 +6,7 @@ import { BackofficeMenuComponent } from './backoffice-menu/backoffice-menu.compo
 import { RouterModule } from '@angular/router';
 import { BackofficeRoutingModule } from './backoffice-routing/backoffice-routing.module';
 import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
-import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
+import { JzMenusModule } from '../../library/jz-components/jz-menus/jz-menus.module';
 
 
 

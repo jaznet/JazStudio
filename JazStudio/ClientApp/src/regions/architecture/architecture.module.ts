@@ -7,7 +7,8 @@ import { ArchitectureMenuComponent } from './architecture-menu/architecture-menu
 import { RouterModule } from '@angular/router';
 import { ArchitectureRoutingModule } from './architecture-routing/architecture-routing.module';
 import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
-import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
+import { JzMenusModule } from '../../library/jz-components/jz-menus/jz-menus.module';
+
 
 @NgModule({
   declarations: [

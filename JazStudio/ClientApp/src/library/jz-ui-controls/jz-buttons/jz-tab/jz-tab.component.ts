@@ -2,10 +2,10 @@ import { ViewEncapsulation } from '@angular/compiler';
 import { Renderer2 } from '@angular/core';
 import { ElementRef } from '@angular/core';
 import { AfterViewInit, Component, HostBinding, Input, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { MenuEventsService } from '../../jz-menus/jz-menu-events.service';
-import { MenuItemBaseComponent } from '../../jz-menus/j3-menu-item-base/j3-menu-item-base.component';
 import { JzButtonComponent } from '../jz-button/jz-button.component';
 import { AppEventsService } from '../../../../services/app-services/app-events.service';
+import { MenuItemBaseComponent } from '../../../jz-components/jz-menus/j3-menu-item-base/j3-menu-item-base.component';
+import { MenuEventsService } from '../../../jz-components/jz-menus/jz-menu-events.service';
 
 @Component({
   selector: 'jz-tab',

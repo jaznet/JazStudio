@@ -1,6 +1,6 @@
 import { AfterViewInit, ChangeDetectorRef, Component, ContentChildren, ElementRef, HostBinding, Input, OnInit, QueryList, Renderer2, RendererFactory2, TemplateRef, ViewChild, ViewChildren } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { JzTabComponent } from '../../jz-buttons/jz-tab/jz-tab.component';
+import { JzTabComponent } from '../../../jz-ui-controls/jz-buttons/jz-tab/jz-tab.component';
 /*import { AppEventsService } from '../../../../app/components/app-services/app-events.service';*/
 import { MenuEventsService } from '../jz-menu-events.service';
 import { MenuItemBaseComponent } from '../j3-menu-item-base/j3-menu-item-base.component';

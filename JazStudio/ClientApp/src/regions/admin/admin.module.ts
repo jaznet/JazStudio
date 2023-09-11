@@ -6,7 +6,7 @@ import { AdminMenuComponent } from './admin-menu/admin-menu.component';
 import { RouterModule } from '@angular/router';
 import { AdminRoutingModule } from './admin-routing/admin-routing.module';
 import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-buttons.module';
-import { JzMenusModule } from '../../library/jz-ui-controls/jz-menus/jz-menus.module';
+import { JzMenusModule } from '../../library/jz-components/jz-menus/jz-menus.module';
 
 
 
