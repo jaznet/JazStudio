@@ -16,6 +16,8 @@ export class SyncDashComponent implements OnInit, AfterViewInit {
   public dashboard!: DashboardLayoutComponent;
   public count: number = 8;
   public cellSpacing: number[] = [10, 10];
+  public cellAspectRatio: number = 100 / 50;
+
 
   constructor(private sync: SyncLicService) { }
   
@@ -43,4 +45,14 @@ export class SyncDashComponent implements OnInit, AfterViewInit {
       this.dashboard.removePanel((<HTMLElement>event.target).offsetParent!.id);
     }
   }
+
+  public panels: any = [
+    { "sizeX": 1, "sizeY": 1, "row": 0, "col": 0, content: '<div class="content">0</div>' },
+    { "sizeX": 1, "sizeY": 1, "row": 0, "col": 1, content: '<div class="content">1</div>' },
+    { "sizeX": 1, "sizeY": 1, "row": 0, "col": 2, content: '<div class="content">2</div>' },
+    { "sizeX": 1, "sizeY": 1, "row": 1, "col": 0, content: '<div class="content">3</div>' },
+    { "sizeX": 1, "sizeY": 1, "row": 1, "col": 1, content: '<div class="content">4</div>' },
+    { "sizeX": 1, "sizeY": 1, "row": 2, "col": 0, content: '<div class="content">5</div>' },
+    { "sizeX": 1, "sizeY": 1, "row": 2, "col": 1, content: '<div class="content">6</div>' }
+  ];
 }

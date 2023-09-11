@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JzDashContainerComponent } from './jz-dash-container.component';
+import { JzDashContainerComponent } from './jz-dashboard-container.component';
 
 describe('JzDashContainerComponent', () => {
   let component: JzDashContainerComponent;

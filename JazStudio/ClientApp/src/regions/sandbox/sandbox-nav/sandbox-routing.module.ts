@@ -5,6 +5,7 @@ import { SandboxComponent } from '../sandbox/sandbox.component';
 import { SandboxHomeComponent } from '../sandbox-home/sandbox-home.component';
 import { ChoroUSAComponent } from '../../../views/choro-usa/choro-usa/choro-usa.component';
 import { SyncDashComponent } from '../../../views/sync-dash/sync-dash/sync-dash.component';
+import { JzDashViewComponent } from '../../../views/jz-dash/jz-dash-view/jz-dash-view.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'syncdash',
         component: SyncDashComponent
+      },
+      {
+        path: 'jzdash',
+        component: JzDashViewComponent
       }
     ]
   }

@@ -8,6 +8,7 @@ import { JzButtonsModule } from '../../library/jz-ui-controls/jz-buttons/jz-butt
 import { SandboxRoutingModule } from './sandbox-nav/sandbox-routing.module';
 import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';
 import { SyncDashModule } from '../../views/sync-dash/sync-dash.module';
+import { JzDashViewModule } from '../../views/jz-dash/jz-dash-view.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { SyncDashModule } from '../../views/sync-dash/sync-dash.module';
     SandboxRoutingModule,
     JzMenusModule,
     JzButtonsModule,
-    SyncDashModule
+    SyncDashModule,
+    JzDashViewModule
   ],
   exports: [
     SandboxComponent,

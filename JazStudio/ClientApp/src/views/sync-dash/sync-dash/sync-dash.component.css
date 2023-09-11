@@ -1,3 +1,8 @@
 div {
     color:black;
 }
+
+.e-dashboardlayout.e-control.e-responsive {
+  width: 100% !important;
+  height: 100% !important;
+}
