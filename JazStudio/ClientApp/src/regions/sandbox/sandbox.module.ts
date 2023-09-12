@@ -9,6 +9,7 @@ import { SandboxRoutingModule } from './sandbox-nav/sandbox-routing.module';
 import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';
 import { SyncDashModule } from '../../views/sync-dash/sync-dash.module';
 import { JzDashboardViewModule } from '../../views/jz-dashboard-view/jz-dashboard-view.module';
+import { ChoroUSAModule } from '../../views/choro-usa/choro-usa.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,9 @@ import { JzDashboardViewModule } from '../../views/jz-dashboard-view/jz-dashboar
     JzMenusModule,
     JzButtonsModule,
     SyncDashModule,
-    JzDashboardViewModule
+    JzDashboardViewModule,
+
+    ChoroUSAModule 
   ],
   exports: [
     SandboxComponent,

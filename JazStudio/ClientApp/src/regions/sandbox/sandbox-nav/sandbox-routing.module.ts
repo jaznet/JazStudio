@@ -19,8 +19,9 @@ const routes: Routes = [
       },
       {
         path: 'chorousa',
-       /* loadChildren: () => import('../../../views/choro-usa/choro-usa.module').then(m => m.ChoroUSAModule)*/
-        component: ChoroUSAComponent
+        component:ChoroUSAComponent
+      /*  loadChildren: () => import('../../../views/choro-usa/choro-usa.module').then(m => m.ChoroUSAModule)*/
+      
       },
       {
         path: 'home',
