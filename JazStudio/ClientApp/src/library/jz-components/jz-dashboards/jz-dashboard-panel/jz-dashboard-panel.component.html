@@ -1,1 +1,7 @@
-<div style="margin:auto">jz-dashboard-panel works!</div>
+<!-- jz-dashboard-panel.component.html -->
+<div class="dashboard-panel">
+  <div class="panel-header">{{ header }}</div>
+  <div class="panel-content">
+    <ng-content></ng-content> <!-- Content projection for Angular components -->
+  </div>
+</div>

@@ -1,4 +1,4 @@
-import { Component, HostBinding } from '@angular/core';
+import { Component, HostBinding, Input } from '@angular/core';
 
 @Component({
   selector: 'jz-dashboard-panel',
@@ -7,6 +7,8 @@ import { Component, HostBinding } from '@angular/core';
 })
 export class JzDashboardPanelComponent {
   @HostBinding('class') classes = 'fit-to-parent grid-row';
+  @Input() header: string = 'Panel Header'; // Input for the header content
+
   constructor() {
 
   }

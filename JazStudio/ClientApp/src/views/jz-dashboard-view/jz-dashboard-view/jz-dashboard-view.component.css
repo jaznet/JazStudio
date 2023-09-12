@@ -7,6 +7,7 @@
 }
 
 .dashboard-panel {
+    flex-flow:column;
   background-color: var(--jz-palette-color-3);
   border: 1px solid #666666;
   box-sizing: border-box;
