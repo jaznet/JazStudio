@@ -6,9 +6,11 @@
 }
 
 .panel-header {
-  background-color: var(--jz-palette-color-4);
-  padding: 10px;
-  font-weight: bold;
+ /* background-color: var(--jz-palette-color-1);
+  padding: 10px;*/
+ /* font-weight: bold;*/
+ font-size:12px;
+ color:black;
 }
 
 .panel-content {

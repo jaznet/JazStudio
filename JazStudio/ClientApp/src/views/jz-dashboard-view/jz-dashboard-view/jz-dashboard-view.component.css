@@ -4,6 +4,7 @@
   grid-template-columns: repeat(var(--columns, 2), 1fr); /* Use CSS variables for columns */
   grid-gap: 10px; /* Adjust the gap as needed */
   background-color: var(--jz-palette-color-2);
+  margin :10px;
 }
 
 .dashboard-panel {
