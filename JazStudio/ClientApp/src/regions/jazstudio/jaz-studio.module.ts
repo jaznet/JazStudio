@@ -6,6 +6,7 @@ import { AppMenusModule } from '../../app/app-menus/app-menus.module';
 import { JazStudioHomeComponent } from './jaz-studio-home/jaz-studio-home.component';
 import { JazStudioViewComponent } from './jaz-studio-view/jaz-studio-view.component';
 import { JazStudioHome1Component } from './jaz-studio-home1/jaz-studio-home1.component';
+import { JzLogoModule } from '../../library/jz-ui-controls/jz-logo/jz-logo.module';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { JazStudioHome1Component } from './jaz-studio-home1/jaz-studio-home1.com
     CommonModule,
     JazStudioRouterModule,
     JzButtonsModule,
-    AppMenusModule
+    AppMenusModule,
+    JzLogoModule
   ],
   exports: [
     JazStudioViewComponent

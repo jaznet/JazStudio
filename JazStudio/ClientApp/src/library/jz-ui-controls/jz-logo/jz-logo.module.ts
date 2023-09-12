@@ -10,6 +10,9 @@ import { JzLogoComponent } from './jz-logo/jz-logo.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [
+    JzLogoComponent
+  ],
 })
 export class JzLogoModule { }
