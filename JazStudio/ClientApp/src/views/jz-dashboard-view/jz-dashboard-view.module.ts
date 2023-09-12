@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { JzDashViewComponent } from './jz-dash-view/jz-dash-view.component';
 import { JzDashboardsModule } from '../../library/jz-components/jz-dashboards/jz-dashboards.module';
-
-
+import { JzDashboardViewComponent } from './jz-dashboard-view/jz-dashboard-view.component';
 
 @NgModule({
   declarations: [
-    JzDashViewComponent
+    JzDashboardViewComponent
   ],
   imports: [
     CommonModule,
     JzDashboardsModule
   ],
   exports: [
-    JzDashViewComponent
+    JzDashboardViewComponent
   ],
 })
-export class JzDashViewModule { }
+export class JzDashboardViewModule { }
