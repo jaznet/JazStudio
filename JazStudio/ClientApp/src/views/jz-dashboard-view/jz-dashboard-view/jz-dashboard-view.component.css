@@ -1,0 +1,15 @@
+
+.dashboard-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--jz-palette-color-2);
+}
+
+.dashboard-panel {
+  flex: 1;
+  max-width: calc(45% - 10px); /* Adjust the width as needed */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  background-color: var(--jz-palette-color-3);
+  border: 1px solid #666666;
+}
