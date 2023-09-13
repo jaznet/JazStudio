@@ -10,7 +10,7 @@ import { DashboardLayoutModule } from '@syncfusion/ej2-angular-layouts';
 import { SyncDashModule } from '../../views/sync-dash/sync-dash.module';
 import { JzDashboardViewModule } from '../../views/jz-dashboard-view/jz-dashboard-view.module';
 import { ChoroUSAModule } from '../../views/choro-usa/choro-usa.module';
-import { TechnicalChartViewModule } from '../../views/charts/technical-chart-view/technical-chart-view.module';
+import { ViewTechnicalChartModule } from '../../views/charts/view-technical-chart/view-technical-chart.module';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { TechnicalChartViewModule } from '../../views/charts/technical-chart-vie
     JzDashboardViewModule,
    
     ChoroUSAModule,
-    TechnicalChartViewModule,
+    ViewTechnicalChartModule,
   ],
   exports: [
     SandboxComponent,
