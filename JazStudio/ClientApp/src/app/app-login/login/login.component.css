@@ -5,12 +5,12 @@ div {
 
 .jz-button {
   color: black;
-  background-color: var(--palette-color-5);
+  background-color: var(--jz-palette-color-5);
 }
 
   .jz-button.login {
     color: black;
-    background-color: var(--palette-color-5);
+    background-color: var(--jz-palette-color-5);
   }
 
   .jz-button.login .jz-button-text {
