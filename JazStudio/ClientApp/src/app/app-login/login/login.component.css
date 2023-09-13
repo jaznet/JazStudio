@@ -4,6 +4,7 @@ div {
 }
 
 .jz-button {
+  border-radius: 8px;
   color: black;
   background-color: var(--jz-palette-color-5);
 }
