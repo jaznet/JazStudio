@@ -20,8 +20,8 @@ const routes: Routes = [
       },
       {
         path: 'chorousa',
-        component:ChoroUSAComponent
-      /*  loadChildren: () => import('../../../views/choro-usa/choro-usa.module').then(m => m.ChoroUSAModule)*/
+      /*  component:ChoroUSAComponent*/
+        loadChildren: () => import('../../../views/choro-usa/choro-usa.module').then(m => m.ChoroUSAModule)
       
       },
       {
