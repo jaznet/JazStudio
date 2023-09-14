@@ -1,7 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { JzTechChartModule } from '../../../library/jz-components/jz-charts/jz-tech-chart/jz-tech-chart.module';
 import { ViewTechnicalChartComponent } from './view-technical-chart/view-technical-chart.component';
+import { JzTechnicalChartModule } from '../../../library/jz-components/jz-charts/jz-technical-chart/jz-technical-chart.module';
+import { ViewTechnicalChartRouter } from './view-technical-chart/view-technical-chart-router.module';
 
 
 
@@ -11,7 +12,8 @@ import { ViewTechnicalChartComponent } from './view-technical-chart/view-technic
   ],
   imports: [
     CommonModule,
-    JzTechChartModule
+    ViewTechnicalChartRouter,
+    JzTechnicalChartModule
   ],
   exports: [
     ViewTechnicalChartComponent
