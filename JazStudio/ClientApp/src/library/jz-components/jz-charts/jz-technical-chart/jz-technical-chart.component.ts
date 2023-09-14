@@ -1,4 +1,6 @@
+
 import { Component } from '@angular/core';
+import { TechanService } from './jz-technical-chart.service';
 
 @Component({
   selector: 'jz-technical-chart',
@@ -6,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./jz-technical-chart.component.css']
 })
 export class JzTechnicalChartComponent {
-  constructor() { }
+  constructor(private techan: TechanService) { }
 
 }
