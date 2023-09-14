@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, ElementRef, HostBinding, OnInit } from '@angular/core';
 import * as d3 from 'd3';
-/*import { techan } from 'techan';*/
+import * as techan from 'techan';
 
 @Component({
   selector: 'jz-tech-chart',
@@ -128,7 +128,7 @@ export class JzTechChartComponent implements OnInit,AfterViewInit {
     //#region Axes / Scales
 
     console.log('%c    createPlotProperties', 'color:#B5A063', this.dimensions);
-    this.xScale = this.techan.scale.financetime().range([0, this.dimensions.plot.width]);
+    this.xScale = techan.scale.financetime().range([0, this.dimensions.plot.width]);
     this.yScale = d3.scaleLinear().range([this.dimensions.ohlc.height, 0]);
     // console.log('%c   x,y', 'color:#afb7aa', this.y);
 

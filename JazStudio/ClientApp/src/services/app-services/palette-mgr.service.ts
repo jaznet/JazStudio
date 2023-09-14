@@ -25,7 +25,7 @@ export class PaletteMgrService {
         document.documentElement.style.setProperty('--jz-palette-color-2', '#423E2E');
         document.documentElement.style.setProperty('--jz-palette-color-3', '#57544C');
         document.documentElement.style.setProperty('--jz-palette-color-4', '#A88F48');
-        document.documentElement.style.setProperty('--jz-palette-color-5', '#CBCBB0');
+        document.documentElement.style.setProperty('--jz-palette-color-5', '#D7D7C1');
 
         document.documentElement.style.setProperty('--jz-palette-border', '#ffffff80');
         document.documentElement.style.setProperty('--jz-palette-text-1', '#CBCBB0');
