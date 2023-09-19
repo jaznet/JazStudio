@@ -45,6 +45,11 @@ const routes: Routes = [
         path: 'technical',
        /* component: ViewTechnicalChartComponent,*/
         loadChildren: () => import('../../../views/charts/view-technical-chart/view-technical-chart.module').then(m => m.ViewTechnicalChartModule)
+      },
+      {
+        path: 'techchart',
+        /* component: ViewTechnicalChartComponent,*/
+        loadChildren: () => import('../../../views/charts/view-technical-chart/view-technical-chart.module').then(m => m.ViewTechnicalChartModule)
       }
     ]
   }

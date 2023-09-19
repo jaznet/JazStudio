@@ -1,0 +1,46 @@
+.view-title {
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+  font-size: 14px;
+  font-family: 'lato-light';
+  font-weight: 600;
+  padding: 0 8px;
+  margin-left: -4px;
+  margin-top: -4px;
+  background-color: var(--jz-palette-color-2);
+  box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+}
+
+.margins {
+  color: #333333;
+}
+
+  .margins line {
+    color: #555555;
+  }
+
+.tick {
+  color: dodgerblue;
+}
+
+.x-axis .tick text {
+  color: yellow;
+  fill: yellow;
+  stroke: transparent;
+}
+
+.x-axis .tick line {
+  color: yellow;
+  fill: yellow;
+  stroke: transparent;
+}
+
+.y-axis .tick text {
+  fill: dodgerblue;
+  stroke: transparent;
+}
+
+.y-axis .tick line {
+  fill: dodgerblue;
+  stroke: transparent;
+}
