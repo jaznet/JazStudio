@@ -46,11 +46,11 @@ const routes: Routes = [
        /* component: ViewTechnicalChartComponent,*/
         loadChildren: () => import('../../../views/charts/view-tech-chart/view-tech-chart.module').then(m => m.ViewTechChartModule)
       },
-      //{
-      //  path: 'technical',
-      //  /* component: ViewTechnicalChartComponent,*/
-      //  loadChildren: () => import('../../../views/charts/view-tech-chart/view-tech-chart.module').then(m => m.ViewTechnicalChartModule)
-      //}
+      {
+        path: 'technical',
+        /* component: ViewTechnicalChartComponent,*/
+        loadChildren: () => import('../../../views/charts/view-technical-chart/view-technical-chart.module').then(m => m.ViewTechnicalChartModule)
+      }
     ]
   }
 ];
