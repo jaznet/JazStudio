@@ -1,6 +1,7 @@
 
 import { DSVRowArray } from "d3-dsv";
-import { StockPriceHistory } from "../../../../models/stock-price-history";
+import { StockPriceHistory } from "./stock-price-history";
+/*import { StockPriceHistory } from "../../../../models/stock-price-history";*/
 
 export class DataPoints {
  Low: number = Number.MAX_SAFE_INTEGER;

@@ -16,6 +16,10 @@ export class PopupsService {
     this.baseUrl = baseUrl
   }
 
+  loading(target: string, action: string, source: string, message: string) {
+    this.raiseLoadingPopOverEvent(target, action, source, message);
+  }
+
   raiseLoadingPopOverEvent(target:string, action: string, source:string, message: string) {
     const event: { target: string; action: string; source: string; message: string } = {
       target: target,

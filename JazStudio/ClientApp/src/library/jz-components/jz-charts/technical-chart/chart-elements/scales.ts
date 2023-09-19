@@ -3,9 +3,9 @@ import * as d3 from 'd3';
 import * as d3Scale from 'd3-scale';
 import * as techan from 'techan';
 import { ChartLayoutMgr } from './chart-layout-mgr';
-import { StockPriceHistory } from '../../../../models/stock-price-history';
 import { DataPoints } from '../data-models/data-points';
 import { OhlcData } from '../data-models/ohlc-data';
+import { StockPriceHistory } from '../data-models/stock-price-history';
 
 export class Scales {
 

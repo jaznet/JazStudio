@@ -2,13 +2,6 @@ import { HttpErrorResponse } from '@angular/common/http';
 import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, HostBinding, OnInit, ViewChild } from '@angular/core';
 import * as d3 from 'd3';
 import * as techan from 'techan';
-import { HttpErrorPopoverComponent } from '../../../library/popups/http-error-popover/http-error-popover.component';
-import { LoadingPopoverComponent } from '../../../library/popups/loading-popover/loading-popover.component';
-import { PopupsService } from '../../../library/popups/popups-svc/popups.service';
-import { StockPriceHistory } from '../../../models/stock-price-history';
-import { EquitiesService } from '../../../services/equities.service';
-import { FinanceService } from '../../../services/finance.service';
-import { UiViewBaseComponent } from '../../ui/ui-view-base/ui-view-base.component';
 import { Axes } from './chart-elements/axes';
 import { ChartLayoutMgr } from './chart-elements/chart-layout-mgr';
 import { Scales } from './chart-elements/scales';
@@ -22,19 +15,24 @@ import { PlotRsi } from './plots/plot-rsi';
 import { PlotSma10 } from './plots/plot-sma10';
 import { PlotSma20 } from './plots/plot-sma20';
 import { PlotVolume } from './plots/plot-volume';
+import { StockPriceHistory } from './data-models/stock-price-history';
+import { PopupsService } from '../../../jz-ui-controls/j3-popups/popups-svc/popups.service';
+import { EquitiesService } from '../../../../services/http-services/equities.service';
+import { FinanceService } from '../../../../services/http-services/finance.service';
+import { LoadingPopoverComponent } from '../../../jz-ui-controls/j3-popups/loading-popover/loading-popover.component';
 
 @Component({
   selector: 'technical-chart',
   templateUrl: './technical-chart.component.html',
   styleUrls: ['./technical-chart.component.css']
 })
-export class TechnicalChartComponent extends UiViewBaseComponent implements OnInit, AfterViewInit {
+export class TechnicalChartComponent  implements OnInit, AfterViewInit {
 
   @HostBinding('class') classes = 'view-component';
  
   //@ViewChild('httperrorpopover', { static: false }) httpErrorPopOver: HttpErrorPopoverComponent | any;
   //@ViewChild('loadingpopover', { static: false }) loadingpopover: LoadingPopoverComponent | any;
-
+  @ViewChild('loadingpopover', { static: false }) loadingpopover: LoadingPopoverComponent | any;
  
   svgElement: d3.Selection<SVGSVGElement, unknown, HTMLElement, any> | undefined;
   chartLayout: ChartLayoutMgr | undefined;
@@ -52,14 +50,12 @@ export class TechnicalChartComponent extends UiViewBaseComponent implements OnIn
   emaPlot: PlotEma | undefined;
 
   constructor(
-    popupsSvc: PopupsService,
-     elementRef: ElementRef,
+    private popupsSvc: PopupsService,
+    private elementRef: ElementRef,
     private equitiesService: EquitiesService,
     private financeService: FinanceService,
     private changeDetector: ChangeDetectorRef,
     private dataService: ChartDataService) {
-    super(popupsSvc, elementRef);
-    this.target = 'technicalchart';
    
   }
 
@@ -67,10 +63,10 @@ export class TechnicalChartComponent extends UiViewBaseComponent implements OnIn
 
   ngAfterViewInit(): void {
   
-    super.ngAfterViewInit();
+   
     var techanTime = techan.scale.financetime().range([0, 100]);
-  
-    this.loading('technicalchart', 'loading', 'finance/GetHistory', 'jaz');
+  this.p
+    this.popupsSvc.loading('technicalchart', 'loading', 'finance/GetHistory', 'jaz');
 
     this.financeService.getHistory().subscribe((data: any) => {
       console.log(data);
