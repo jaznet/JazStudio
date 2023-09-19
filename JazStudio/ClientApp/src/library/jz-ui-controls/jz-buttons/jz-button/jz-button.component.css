@@ -64,6 +64,7 @@ div {
 }
 
 .selected.menu-subview {
+  background-color: var(--jz-palette-color-4);
 }
 
 .selected.menu-subview .jz-button-text {
@@ -82,5 +83,7 @@ div {
 }
 
 .selected .jz-button-text {
-  color: var(--jz-palette-color-3);
+  color: var(--jz-palette-text-4);
 }
+
+

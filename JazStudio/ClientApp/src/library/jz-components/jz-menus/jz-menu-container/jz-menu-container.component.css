@@ -1,3 +1,23 @@
+.menu-panel-title {
+  color: var(--jz-palette-text-1);
+  font-size: 12px;
+  font-weight: 600;
+  justify-content: center;
+  align-items: center;
+}
+
+  .menu-panel-title div {
+    color: var(--jz-palette-text-1);
+  }
+
+  .menu-panel-title > div {
+    color: var(--jz-palette-text-1);
+  }
+
+
+.menu-subview .selected .jz-button-base-layer {
+  background-color: var(--jz-palette-color-4);
+}
 
 .menu-subview {
 }
@@ -5,9 +25,7 @@
 .menu-container {
 }
 
-.menu-subview .selected .jz-button-base-layer {
-  background-color: var(--jz-palette-color-5);
-}
+
 
   .menu-container.menu-subview {
   }
