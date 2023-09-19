@@ -7,7 +7,7 @@ import { ChoroUSAComponent } from '../../../views/choro-usa/choro-usa/choro-usa.
 import { SyncDashComponent } from '../../../views/sync-dash/sync-dash/sync-dash.component';
 import { ChorodashComponent } from '../../../views/chorodash/chorodash/chorodash.component';
 import { JzDashboardViewComponent } from '../../../views/jz-dashboard-view/jz-dashboard-view/jz-dashboard-view.component';
-import { ViewTechnicalChartComponent } from '../../../views/charts/view-technical-chart/view-technical-chart/view-technical-chart.component';
+import { ViewTechChartComponent } from '../../../views/charts/view-tech-chart/view-tech-chart/view-tech-chart.component';
 
 const routes: Routes = [
   {
@@ -42,15 +42,15 @@ const routes: Routes = [
         component: ChorodashComponent
       },
       {
-        path: 'technical',
-       /* component: ViewTechnicalChartComponent,*/
-        loadChildren: () => import('../../../views/charts/view-technical-chart/view-technical-chart.module').then(m => m.ViewTechnicalChartModule)
-      },
-      {
         path: 'techchart',
-        /* component: ViewTechnicalChartComponent,*/
-        loadChildren: () => import('../../../views/charts/view-technical-chart/view-technical-chart.module').then(m => m.ViewTechnicalChartModule)
-      }
+       /* component: ViewTechnicalChartComponent,*/
+        loadChildren: () => import('../../../views/charts/view-tech-chart/view-tech-chart.module').then(m => m.ViewTechChartModule)
+      },
+      //{
+      //  path: 'technical',
+      //  /* component: ViewTechnicalChartComponent,*/
+      //  loadChildren: () => import('../../../views/charts/view-tech-chart/view-tech-chart.module').then(m => m.ViewTechnicalChartModule)
+      //}
     ]
   }
 ];

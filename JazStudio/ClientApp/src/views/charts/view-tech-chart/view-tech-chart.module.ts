@@ -1,22 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ViewTechnicalChartComponent } from './view-technical-chart/view-technical-chart.component';
+import { ViewTechChartComponent } from './view-tech-chart/view-tech-chart.component';
 import { JzTechnicalChartModule } from '../../../library/jz-components/jz-charts/jz-technical-chart/jz-technical-chart.module';
-import { ViewTechnicalChartRouter } from './view-technical-chart/view-technical-chart-router.module';
+import { ViewTechChartRouter } from './view-tech-chart/view-tech-chart-router.module';
 
 
 
 @NgModule({
   declarations: [
-    ViewTechnicalChartComponent
+    ViewTechChartComponent
   ],
   imports: [
     CommonModule,
-    ViewTechnicalChartRouter,
+    ViewTechChartRouter,
     JzTechnicalChartModule
   ],
   exports: [
-    ViewTechnicalChartComponent
+    ViewTechChartComponent
   ],
 })
-export class ViewTechnicalChartModule { }
+export class ViewTechChartModule { }
