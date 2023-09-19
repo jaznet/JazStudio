@@ -26,6 +26,7 @@ export class JzMenuContainerComponent implements OnInit, AfterViewInit {
   @Input() initialTemplate: TemplateRef<any> | any;
   @Input() orientation:  string='';
   @Input() menuType: string | any;
+  @Input() tabs: boolean = true;
 
   private renderer: Renderer2;
   currentTemplate: TemplateRef<any> | any;
@@ -76,7 +77,7 @@ export class JzMenuContainerComponent implements OnInit, AfterViewInit {
 
       if (menuitem.menuItem === selectedItem.menuItem) {
         menuitem._btn.selection('select');
-        menuitem._tab.nativeElement.classList.add('selected');
+       if (this.tabs) menuitem._tab.nativeElement.classList.add('selected');
       
       }
     });

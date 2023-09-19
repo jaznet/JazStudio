@@ -15,6 +15,7 @@ export class MainMenuComponent extends MenuBaseComponent implements OnInit {
 
   @Input() view: string | any;
   @Input() visibility: string | any;
+  @Input() tabs: boolean = true;
   @ViewChild('menuContainer') menuContainer!: ElementRef;
   @ContentChildren(MenuItemBaseComponent) menuItems: QueryList<MenuItemBaseComponent> | any;
 
@@ -24,13 +25,16 @@ export class MainMenuComponent extends MenuBaseComponent implements OnInit {
     appEvents: AppEventsService,
     renderer: Renderer2,
     menuEvents: MenuEventsService,
-    changeDetector: ChangeDetectorRef) {
+    changeDetector: ChangeDetectorRef)
+  {
     super();
     this.menuName = 'menu-main';
     this.orientation = 'horizontal';
     console.log('1main menu', this.menuContainer)
   }
 
-  ngOnInit() { }
+  ngOnInit() {
+    console.log(this.tabs)
+  }
 
 }
