@@ -33,7 +33,11 @@ export class TechnicalChartComponent  implements OnInit, AfterViewInit {
   //@ViewChild('httperrorpopover', { static: false }) httpErrorPopOver: HttpErrorPopoverComponent | any;
   //@ViewChild('loadingpopover', { static: false }) loadingpopover: LoadingPopoverComponent | any;
   @ViewChild('loadingpopover', { static: false }) loadingpopover: LoadingPopoverComponent | any;
- 
+  @ViewChild('svgParent', { static: false }) svgParentRef: ElementRef | any;
+
+  width: number = 300;
+  height: number = 150;
+
   svgElement: d3.Selection<SVGSVGElement, unknown, HTMLElement, any> | undefined;
   chartLayout: ChartLayoutMgr | undefined;
   axes: Axes | undefined;
@@ -62,10 +66,11 @@ export class TechnicalChartComponent  implements OnInit, AfterViewInit {
   ngOnInit(): void { }
 
   ngAfterViewInit(): void {
-  
-   
+    this.width = this.svgParentRef.nativeElement.clientWidth;
+    this.height = this.svgParentRef.nativeElement.clientHeight;
+
     var techanTime = techan.scale.financetime().range([0, 100]);
-  this.p
+ 
     this.popupsSvc.loading('technicalchart', 'loading', 'finance/GetHistory', 'jaz');
 
     this.financeService.getHistory().subscribe((data: any) => {
@@ -85,6 +90,10 @@ export class TechnicalChartComponent  implements OnInit, AfterViewInit {
 
   ngAfterViewChecked(): void {
     this.changeDetector.detectChanges();
+  }
+
+  onHttpError(target: string, status: any, statusText: any, url: any, error: any) {
+    this.popupsSvc.raiseHttpErrorPopOverEvent(target, status, statusText, url, error);
   }
 
   createTechnicalChart() {

@@ -63,6 +63,12 @@ div {
 .menu-subview {
 }
 
+  .menu-subview .jz-button-base-layer {
+    background-color: var(--jz-palette-color-3);
+  }
+
+
+
 .selected.menu-subview {
   background-color: var(--jz-palette-color-4);
 }

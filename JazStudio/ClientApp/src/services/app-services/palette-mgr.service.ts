@@ -23,13 +23,13 @@ export class PaletteMgrService {
 
         document.documentElement.style.setProperty('--jz-palette-color-1', '#191905');
         document.documentElement.style.setProperty('--jz-palette-color-2', '#423E2E');
-        document.documentElement.style.setProperty('--jz-palette-color-3', '#57544C');
+        document.documentElement.style.setProperty('--jz-palette-color-3', '#6D6A5F');
         document.documentElement.style.setProperty('--jz-palette-color-4', '#A88F48');
         document.documentElement.style.setProperty('--jz-palette-color-5', '#D7D7C1');
 
         document.documentElement.style.setProperty('--jz-palette-text-1', '#CBCBB0');
         document.documentElement.style.setProperty('--jz-palette-text-2', '#D7AE46');
-        document.documentElement.style.setProperty('--jz-palette-text-3', '#CBCBB0');
+        document.documentElement.style.setProperty('--jz-palette-text-3', 'black');
         document.documentElement.style.setProperty('--jz-palette-text-4', 'black');
         document.documentElement.style.setProperty('--jz-palette-text-5', 'white');
 
