@@ -29,6 +29,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="ClientApp\src\library\jz-components\jz-charts\techan\techx.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="ClientApp\src\app\login\" />
   </ItemGroup>
 

@@ -41,6 +41,14 @@ div {
   cursor: pointer;
 }
 
+.menu-subview .jz-button-base-layer {
+  background-color: var(--jz-palette-color-2);
+}
+
+.menu-subview .jz-button-text {
+  color: var(--jz-palette-text-2);
+}
+
 .jz-button.login {
   color: black;
 }
@@ -63,11 +71,13 @@ div {
 .menu-subview {
 }
 
-  .menu-subview .jz-button-base-layer {
-    background-color: var(--jz-palette-color-3);
+  .menu-subview.jz-button-base-layer {
+    background-color: var(--jz-palette-color-2);
   }
 
-
+  .menu-subview .jz-button-base-layer {
+    background-color: var(--jz-palette-color-2);
+  }
 
 .selected.menu-subview {
   background-color: var(--jz-palette-color-4);

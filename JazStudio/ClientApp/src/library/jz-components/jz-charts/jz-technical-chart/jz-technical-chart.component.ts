@@ -2,6 +2,7 @@
 import { Component, ElementRef, HostBinding } from '@angular/core';
 import * as d3 from 'd3';
 import { TechanService } from './jz-technical-chart-service/jz-technical-chart.service';
+import * as techan from '../techan/techan.js';
 
 @Component({
   selector: 'jz-technical-chart',
@@ -72,7 +73,7 @@ export class JzTechnicalChartComponent {
 
   //#endregion
   constructor(
-    private techan: TechanService,
+    
     private elementRef: ElementRef) {
     console.log(techan);
   }

@@ -1,14 +1,16 @@
 
 import * as d3Scale from 'd3-scale';
-import * as techan from 'techan';
+/*import * as techan from 'techan';*/
 import * as d3Axis from 'd3-axis';
 import { ChartLayoutMgr } from '../chart-elements/chart-layout-mgr';
 import { DataPoints } from '../data-models/data-points';
 import { ChartDataService } from '../data-models/chart-data.service';
+import { TechanService } from '../../techan/techan.service';
 
 export class PlotRsi {
 
   constructor(
+    private techanSvc: TechanService,
     private chartLayout: ChartLayoutMgr | undefined,
     private dataPoints: DataPoints,
     private dataService: ChartDataService) { }
@@ -21,15 +23,15 @@ export class PlotRsi {
       .attr('x', this.chartLayout!.axes.leftAxis + 8)
       .attr('y', 21.5);
 
-    const xScale = techan.scale.financetime()
-      .domain(techan.scale.plot.time(this.dataService.ohlcdata).domain())
+    const xScale = this.techanSvc.techan.scale.financetime()
+      .domain(this.techanSvc.techan.scale.plot.time(this.dataService.ohlcdata).domain())
       .range([0, this.chartLayout!.plotMacd.width - this.chartLayout!.axes.leftAxis - this.chartLayout!.axes.rightAxis]);
 
     const yScale = d3Scale.scaleLinear()
-      .domain(techan.scale.plot.rsi(this.dataService.rsidata).domain())
+      .domain(this.techanSvc.techan.scale.plot.rsi(this.dataService.rsidata).domain())
       .range([this.chartLayout!.plotRsi.height, 0]);
 
-    const techanRsiPlot = techan.plot.rsi()
+    const techanRsiPlot = this.techanSvc.techan.plot.rsi()
       .xScale(xScale)
       .yScale(yScale);
 

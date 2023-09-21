@@ -1,29 +1,31 @@
-import * as techan from 'techan';
+/*import * as techan from 'techan';*/
 import * as d3Scale from 'd3-scale';
 import * as d3Axis from 'd3-axis';
 
 import { ChartLayoutMgr } from '../chart-elements/chart-layout-mgr';
 import { DataPoints } from '../data-models/data-points';
 import { ChartDataService } from '../data-models/chart-data.service';
+import { TechanService } from '../../techan/techan.service';
 
 export class PlotSma10 {
 
   constructor(
+    private techanSvc: TechanService,
     private chartLayout: ChartLayoutMgr | undefined,
     private dataPoints: DataPoints,
     private dataService: ChartDataService) { }
 
   drawSma10() {
-    const xScale = techan.scale.financetime()
-      .domain(techan.scale.plot.time(this.dataService.ohlcdata).domain())
+    const xScale = this.techanSvc.techan.scale.financetime()
+      .domain(this.techanSvc.techan.scale.plot.time(this.dataService.ohlcdata).domain())
       .range([0, this.chartLayout!.plotOhlc.width - this.chartLayout!.axes.leftAxis - this.chartLayout!.axes.rightAxis]);
 
     const yScale = d3Scale.scaleLinear()
-      .domain(techan.scale.plot.ohlc(this.dataService.ohlcdata.slice(23)).domain())
+      .domain(this.techanSvc.techan.scale.plot.ohlc(this.dataService.ohlcdata.slice(23)).domain())
       .range([this.chartLayout!.plotOhlc.height, 0]);
    
     const techanSma10Plot =
-      techan.plot.sma()
+      this.techanSvc.techan.plot.sma()
         .xScale(xScale)
         .yScale(yScale);
 

@@ -1,7 +1,7 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, HostBinding, OnInit, ViewChild } from '@angular/core';
 import * as d3 from 'd3';
-import * as techan from 'techan';
+/*import * as techan from 'techan';*/
 import { Axes } from './chart-elements/axes';
 import { ChartLayoutMgr } from './chart-elements/chart-layout-mgr';
 import { Scales } from './chart-elements/scales';
@@ -20,6 +20,9 @@ import { PopupsService } from '../../../jz-ui-controls/j3-popups/popups-svc/popu
 import { EquitiesService } from '../../../../services/http-services/equities.service';
 import { FinanceService } from '../../../../services/http-services/finance.service';
 import { LoadingPopoverComponent } from '../../../jz-ui-controls/j3-popups/loading-popover/loading-popover.component';
+import { TechanService } from '../techan/techan.service';
+/*import * as techan from '../techan/techan.js';*/
+
 
 @Component({
   selector: 'technical-chart',
@@ -53,7 +56,9 @@ export class TechnicalChartComponent  implements OnInit, AfterViewInit {
   sma20Plot: PlotSma20 | undefined;
   emaPlot: PlotEma | undefined;
 
+
   constructor(
+    private techanSvc: TechanService,
     private popupsSvc: PopupsService,
     private elementRef: ElementRef,
     private equitiesService: EquitiesService,
@@ -63,13 +68,22 @@ export class TechnicalChartComponent  implements OnInit, AfterViewInit {
    
   }
 
-  ngOnInit(): void { }
+ 
+  ngOnInit(): void {
+    //// Import the JavaScript file and assign it to a variable
+    //import('../techan/techan.js').then(module => {
+    //  this.techan = module;
+    //  // Now you can access functions or variables from the imported module
+    //  const result = this.techan.someFunction();
+    //  console.log(result);
+    //});
+  }
 
   ngAfterViewInit(): void {
     this.width = this.svgParentRef.nativeElement.clientWidth;
     this.height = this.svgParentRef.nativeElement.clientHeight;
-
-    var techanTime = techan.scale.financetime().range([0, 100]);
+    console.log(this.techanSvc.techan);
+    var techanTime = this.techanSvc.techan.scale.financetime().range([0, 100]);
  
     this.popupsSvc.loading('technicalchart', 'loading', 'finance/GetHistory', 'jaz');
 
@@ -100,14 +114,14 @@ export class TechnicalChartComponent  implements OnInit, AfterViewInit {
     this.chartLayout = new ChartLayoutMgr(this.width, this.height);
     this.dataPoints = new DataPoints(this.data);
     this.axes = new Axes(this.chartLayout, this.dataPoints);
-    this.scales = new Scales(this.chartLayout, this.data, this.dataPoints, this.ohlcData);
-    this.PlotCandlesticks = new PlotCandlesticks(this.chartLayout, this.dataService);
-    this.volumePlot = new PlotVolume(this.chartLayout, this.dataPoints, this.dataService);
-    this.macdPlot = new PlotMacd(this.chartLayout, this.dataPoints, this.dataService);
-    this.rsiPlot = new PlotRsi(this.chartLayout, this.dataPoints, this.dataService);
-    this.sma10Plot = new PlotSma10(this.chartLayout, this.dataPoints, this.dataService);
-    this.sma20Plot = new PlotSma20(this.chartLayout, this.dataPoints, this.dataService);
-    this.emaPlot = new PlotEma(this.chartLayout, this.dataPoints, this.dataService);
+    this.scales = new Scales(this.techanSvc.techan, this.chartLayout, this.data, this.dataPoints, this.ohlcData);
+    this.PlotCandlesticks = new PlotCandlesticks(this.techanSvc.techan, this.chartLayout, this.dataService);
+    this.volumePlot = new PlotVolume(this.techanSvc.techan, this.chartLayout, this.dataPoints, this.dataService);
+    this.macdPlot = new PlotMacd(this.techanSvc.techan, this.chartLayout, this.dataPoints, this.dataService);
+    this.rsiPlot = new PlotRsi(this.techanSvc.techan, this.chartLayout, this.dataPoints, this.dataService);
+    this.sma10Plot = new PlotSma10(this.techanSvc.techan, this.chartLayout, this.dataPoints, this.dataService);
+    this.sma20Plot = new PlotSma20(this.techanSvc.techan, this.chartLayout, this.dataPoints, this.dataService);
+    this.emaPlot = new PlotEma(this.techanSvc.techan, this.chartLayout, this.dataPoints, this.dataService);
 
     this.svgElement = d3.select('#svgContainer').append('svg')
       .attr('width', this.width)

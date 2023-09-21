@@ -12,6 +12,7 @@ div {
   .jz-button.login {
     color: black;
     background-color: var(--jz-palette-color-5);
+    border: 1px solid black;
   }
 
   .jz-button.login .jz-button-text {
@@ -47,12 +48,13 @@ div {
 
 .form-group {
   flex-flow:column;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
 }
 
 label {
   display: block;
   font-weight: bold;
+  margin-left: 3px;
 }
 
 .form-control {

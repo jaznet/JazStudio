@@ -34,7 +34,7 @@ export class MainMenuComponent extends MenuBaseComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.tabs)
+  
   }
 
 }

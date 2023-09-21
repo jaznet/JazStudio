@@ -1,11 +1,12 @@
 import { DSVRowArray } from 'd3-dsv';
 import * as d3 from 'd3';
 import * as d3Scale from 'd3-scale';
-import * as techan from 'techan';
+/*import * as techan from 'techan';*/
 import { ChartLayoutMgr } from './chart-layout-mgr';
 import { DataPoints } from '../data-models/data-points';
 import { OhlcData } from '../data-models/ohlc-data';
 import { StockPriceHistory } from '../data-models/stock-price-history';
+import { TechanService } from '../../jz-technical-chart/jz-technical-chart-service/jz-technical-chart.service';
 
 export class Scales {
 
@@ -15,6 +16,7 @@ export class Scales {
   _priceRangleScale;
 
   constructor(
+    private techanSvc: TechanService,
     private chartLayout: ChartLayoutMgr | undefined,
     data: StockPriceHistory[] | undefined,
     dataPoints: DataPoints | undefined,
@@ -23,13 +25,13 @@ export class Scales {
   {
     this.data = data;
     this._datapoints = dataPoints;
-    const dom = techan.scale.plot.time(this.Data_Ohlc!).domain();
+    const dom = techanSvc.techan.scale.plot.time(this.Data_Ohlc!).domain();
 
     console.log(Data_Ohlc);
    
     this.xDateScale =
-      techan.scale.financetime()
-      .domain(techan.scale.plot.time(Data_Ohlc!).domain())
+      techanSvc.techan.scale.financetime()
+      .domain(techanSvc.techan.techan.scale.plot.time(Data_Ohlc!).domain())
         .range([0, this.chartLayout!.width! - this.chartLayout!.margins.leftMargin - this.chartLayout!.margins.rightMargin]);
 
     this._priceRangleScale = d3Scale.scaleLinear()

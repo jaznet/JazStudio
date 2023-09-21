@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import * as d3 from 'd3';
-import * as techan from 'techan';
+import { TechanService } from '../../techan/techan.service';
+/*import * as techan from 'techan';*/
+import * as techan from '../../techan/techan.js';
 
 @Injectable({
   providedIn: 'root'
@@ -14,12 +16,12 @@ export class ChartDataService {
   sma20: any;
   ema: any;
 
-  constructor() { }
+  constructor(private techanSvc: TechanService) { }
 
   mapData(data: any) {
 
     const parseDate = d3.timeParse("%Y-%m-%dT%H:%M:%S");
-    const techanCandlesticksPlot = techan.plot.candlestick();
+    const techanCandlesticksPlot = this.techanSvc.techan.plot.candlestick();
 
     let accessor = techanCandlesticksPlot.accessor();
 
@@ -34,10 +36,10 @@ export class ChartDataService {
       };
     }).sort(function (a: any, b: any) { return d3.ascending(accessor.d(a), accessor.d(b)); });
 
-    this.macddata = techan.indicator.macd()(this.ohlcdata);
-    this.rsidata = techan.indicator.rsi()(this.ohlcdata);
-    this.sma10 = techan.indicator.sma().period(10)(this.ohlcdata);
-    this.sma20 = techan.indicator.sma().period(20)(this.ohlcdata);
-    this.ema = techan.indicator.ema().period(50)(this.ohlcdata);
+    this.macddata = this.techanSvc.techan.indicator.macd()(this.ohlcdata);
+    this.rsidata = this.techanSvc.techan.indicator.rsi()(this.ohlcdata);
+    this.sma10 = this.techanSvc.techan.indicator.sma().period(10)(this.ohlcdata);
+    this.sma20 = this.techanSvc.techan.indicator.sma().period(20)(this.ohlcdata);
+    this.ema = this.techanSvc.techan.indicator.ema().period(50)(this.ohlcdata);
   }
 }

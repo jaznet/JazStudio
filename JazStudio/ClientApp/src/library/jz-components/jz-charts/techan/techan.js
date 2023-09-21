@@ -2,6 +2,7 @@
  TechanJS v0.8.0
  (c) 2014 - 2016 Andre Dumas | https://github.com/andredumas/techan.js
 */
+import * as d3 from 'd3';
 (function (f) {
   if (typeof exports === "object" && typeof module !== "undefined") { module.exports = f() }
   else if (typeof define === "function" && define.amd) { define([], f) } else { var g; if (typeof window !== "undefined") { g = window } else if (typeof global !== "undefined") { g = global } else if (typeof self !== "undefined") { g = self } else { g = this } g.techan = f() }
@@ -2618,8 +2619,17 @@ module.exports = function(d3) {
   };
 };
 
-function d3_event() {
-  return d3.event;
+  function d3_event() {
+    // Within an event listener callback function
+     d3event;
+    d3.select('element').on('click', function () {
+      
+      // Access the event using d3.event
+      // d3event = d3.event;
+      // Your event handling code here
+    });
+
+    return d3event;
 }
 
 },{"../accessor":8,"../scale":59,"../svg":62,"../util":64,"./adx":36,"./aroon":37,"./atrtrailingstop":38,"./axisannotation":39,"./bollinger":40,"./candlestick":41,"./crosshair":42,"./ichimoku":43,"./line":45,"./macd":46,"./ohlc":47,"./plot":48,"./plotmixin":49,"./rsi":50,"./stochastic":51,"./supstance":52,"./tick":53,"./tradearrow":54,"./trendline":55,"./volume":56,"./williams":57}],45:[function(require,module,exports){
@@ -4132,7 +4142,7 @@ function d3_v3_multi_shim(multi) {
 },{}],59:[function(require,module,exports){
 'use strict';
 
-module.exports = function(d3) {
+module.exports = function() {
   var zoomable = require('./zoomable')(),
       util = require('../util')(),
       accessors = require('../accessor')(),
@@ -4453,7 +4463,7 @@ module.exports = function(d3_functor) {  // Injected dependencies
 },{}],62:[function(require,module,exports){
 'use strict';
 
-module.exports = function(d3) {
+module.exports = function() {
   return {
     arrow: require('./arrow')(require('../util')().functor)
   };
@@ -4468,7 +4478,7 @@ if('undefined' != typeof window) _d3 = window.d3;
 else if('object' == typeof module) _d3 = require('d3'); // else we're in the only other supported mode: v8/node
 else throw "Unsupported runtime environment: Could not find d3. Ensure defined globally on window, or available as dependency.";
 
-module.exports = (function(d3) {
+module.exports = (function() {
   return {
     version: require('../build/version'),
     accessor: require('./accessor')(),
