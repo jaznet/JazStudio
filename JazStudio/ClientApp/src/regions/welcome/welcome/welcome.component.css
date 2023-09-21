@@ -1,28 +1,35 @@
+
 .grid-container {
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 4px; /* Optional: adds some space between grid items */
+  gap: 4px;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-rows: repeat(3, minmax(auto, 1fr));
+  grid-template-areas:
+    "a b c"
+    "d e f"
+    "g h i";
 }
 
-.grid-item {
+.grid-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: transparent;
-  border: .5px solid #333333;
-  padding: 4px;
-  text-align: center;
+  border: 1px solid #ccc;
 }
 
-  .grid-item.center {
-    justify-content: center;
-    align-items: center;
-  }
+.grid-panel-center {
+  grid-area: e;
+}
 
-  .grid-item.bottom {
-    justify-content: center;
-    align-items: end;
-  }
+.fit-to-content {
+  display: inline-block; /* Make the container shrink to fit its content */
+}
+
+
+
 
 .jz-button-container {
   border-radius: 5px;
