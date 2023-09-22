@@ -3,6 +3,10 @@ body {
   height: 100%;
 }
 
+.center  {
+    justify-content:center;
+}
+
 .fit-to-parent {
   width: 100%;
   height: 100%;
@@ -10,7 +14,6 @@ body {
 }
 
 .fit-to-content {
- /* margin: auto;*/
   height: fit-content;
   width: fit-content;
 }
@@ -30,4 +33,13 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.raised-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff; /* Text color */
+  text-shadow: 2px 2px 0px #888888; /* Adjust the shadow properties as needed */
+  background-color: #333333; /* Background color for contrast */
+  padding: 10px; /* Optional padding for spacing around the text */
 }

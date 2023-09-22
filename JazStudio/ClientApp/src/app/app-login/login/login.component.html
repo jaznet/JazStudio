@@ -1,7 +1,7 @@
 
 <div class="login-container">
   <!--<img src="../assets/logos/JazLogo-Master-5b.svg" height="12" style="align-self:end; margin-right:-12px" />-->
-  <h2>Login</h2>
+  <div style="font-size:24px;justify-content:center">Login</div>
   <form [formGroup]="loginForm">
 
     <div class="form-group">
@@ -14,8 +14,9 @@
       <input type="password" id="password" formControlName="password" class="form-control">
     </div>
 
-    <jz-button class="jz-button login" [text]="'Enter'" type="submit" routerLink="/home" (click)="login()"
-               [colorTxt]="'black'" [colorBkg]="'var(--jz-palette-color-4'" [fontSize]="'16px'">Login</jz-button>
-
+    <div class="center">
+      <jz-button class="jz-button login" [text]="'Enter'" type="submit" routerLink="/home" (click)="login()"
+                 [colorTxt]="'black'" [colorBkg]="'var(--jz-palette-color-4'" [fontSize]="'16px'">Login</jz-button>
+    </div>
   </form>
 </div>
