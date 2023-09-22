@@ -37,7 +37,8 @@
               "src/assets/styles/app.css",
               "src/assets/styles/flex-grids.css",
               "src/assets/styles/layouts.css",
-              "src/assets/styles/menus.css"
+              "src/assets/styles/menus.css",
+              "src/assets/styles/fx.css"
             ],
             "scripts": []
           },

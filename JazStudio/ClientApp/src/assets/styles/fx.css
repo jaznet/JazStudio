@@ -1,0 +1,9 @@
+
+.raised-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff; /* Text color */
+  text-shadow: 2px 2px 0px #888888; /* Adjust the shadow properties as needed */
+  /*background-color: #333333;*/ /* Background color for contrast */
+  padding: 10px; /* Optional padding for spacing around the text */
+}
