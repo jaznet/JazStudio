@@ -9,7 +9,8 @@ import * as d3 from 'd3';
 })
 
   (function () {
-    var define, module, exports; return (function e(t, n, r) {
+    var define, module, exports; return
+    (function e(t, n, r) {
       function s(o, u) {
         if (!n[o]) {
           if (!t[o]) {
@@ -23,7 +24,8 @@ import * as d3 from 'd3';
       ({
     1: [function (require, module, exports) {
 'use strict';module.exports='0.8.0';
-},{}],2:[function(require,module,exports){
+        }, {}],
+        2: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -72,7 +74,8 @@ module.exports = function() {
   return bind();
 };
 
-},{}],3:[function(require,module,exports){
+        }, {}],
+        3: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -144,7 +147,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],4:[function(require,module,exports){
+        }, {}],
+        4: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -184,7 +188,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],5:[function(require,module,exports){
+        }, {}],
+        5: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -232,7 +237,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],6:[function(require,module,exports){
+        }, {}],
+        6: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -286,7 +292,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],7:[function(require,module,exports){
+        }, {}],
+        7: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -375,7 +382,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],8:[function(require,module,exports){
+        }, {}],
+        8: [function (require, module, exports) {
 'use strict';
 
 // Provide IDs for all accessors. Default to date, but at least provide an option
@@ -401,7 +409,8 @@ module.exports = function() {
   };
 };
 
-},{"./adx":2,"./aroon":3,"./atrtrailingstop":4,"./bollinger":5,"./crosshair":6,"./ichimoku":7,"./macd":9,"./ohlc":10,"./rsi":11,"./stochastic":12,"./supstance":13,"./tick":14,"./trade":15,"./trendline":16,"./value":17,"./volume":18,"./williams":19}],9:[function(require,module,exports){
+        }, { "./adx": 2, "./aroon": 3, "./atrtrailingstop": 4, "./bollinger": 5, "./crosshair": 6, "./ichimoku": 7, "./macd": 9, "./ohlc": 10, "./rsi": 11, "./stochastic": 12, "./supstance": 13, "./tick": 14, "./trade": 15, "./trendline": 16, "./value": 17, "./volume": 18, "./williams": 19 }],
+        9: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -451,7 +460,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],10:[function(require,module,exports){
+        }, {}],
+        10: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -515,7 +525,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],11:[function(require,module,exports){
+        }, {}],
+        11: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -571,7 +582,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],12:[function(require,module,exports){
+        }, {}],
+        12: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -634,7 +646,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],13:[function(require,module,exports){
+        }, {}],
+        13: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -684,7 +697,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],14:[function(require,module,exports){
+        }, {}],
+        14: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -732,7 +746,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],15:[function(require,module,exports){
+        }, {}],
+        15: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -776,7 +791,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],16:[function(require,module,exports){
+        }, {}],
+        16: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -836,7 +852,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],17:[function(require,module,exports){
+        }, {}],
+        17: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -886,7 +903,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],18:[function(require,module,exports){
+        }, {}],
+        18: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -918,7 +936,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],19:[function(require,module,exports){
+        }, {}],
+        19: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -950,7 +969,8 @@ module.exports = function() {
 
   return bind();
 };
-},{}],20:[function(require,module,exports){
+        }, {}],
+        20: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_max, indicatorMixin, accessor_ohlc, indicator_ema) {  // Injected dependencies
@@ -1026,7 +1046,8 @@ function datum(date, adx, plusDi, minusDi) {
   }
 }
 
-},{}],21:[function(require,module,exports){
+        }, {}],
+        21: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc) {  // Injected dependencies
@@ -1099,7 +1120,8 @@ function datum(date, up,down,oscillator, middle, overbought, oversold) {
   else return { date: date, up: null,down:null,oscillator:null, middle: null, overbought: null, oversold: null };
 }
 
-},{}],22:[function(require,module,exports){
+        }, {}],
+        22: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc, indicator_sma) {  // Injected dependencies
@@ -1155,7 +1177,8 @@ function datum(date, atr) {
   if(atr) return { date: date, value: atr };
   else return { date: date, value: null };
 }
-},{}],23:[function(require,module,exports){
+        }, {}],
+        23: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc, indicator_atr) {  // Injected dependencies
@@ -1208,7 +1231,8 @@ module.exports = function(indicatorMixin, accessor_ohlc, indicator_atr) {  // In
     return indicator;
   };
 };
-},{}],24:[function(require,module,exports){
+        }, {}],
+        24: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc, indicator_sma) {  // Injected dependencies
@@ -1263,7 +1287,8 @@ function datum(date, middleBand, upperBand, lowerBand) {
   else return { date: date, middleBand: null, upperBand: null, lowerBand: null};
 }
 
-},{}],25:[function(require,module,exports){
+        }, {}],
+        25: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc, alpha_init) {  // Injected dependencies
@@ -1309,7 +1334,8 @@ module.exports = function(indicatorMixin, accessor_ohlc, alpha_init) {  // Injec
     return indicator;
   };
 };
-},{}],26:[function(require,module,exports){
+        }, {}],
+        26: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc, min, max) {  // Injected dependencies
@@ -1340,7 +1366,8 @@ module.exports = function(indicatorMixin, accessor_ohlc, min, max) {  // Injecte
     return indicator;
   };
 };
-},{}],27:[function(require,module,exports){
+        }, {}],
+        27: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc) {  // Injected dependencies
@@ -1422,7 +1449,8 @@ function senkouSpanA(tenkanSen, kijunSen) {
 function average(v1, v2) {
   return (v1+v2)/2;
 }
-},{}],28:[function(require,module,exports){
+        }, {}],
+        28: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3) {
@@ -1461,7 +1489,8 @@ function wilder_alpha_init(period) {
   return 1/period;
 }
 
-},{"../accessor":8,"./adx":20,"./aroon":21,"./atr":22,"./atrtrailingstop":23,"./bollinger":24,"./ema":25,"./heikinashi":26,"./ichimoku":27,"./indicatormixin":29,"./macd":30,"./rsi":31,"./sma":32,"./stochastic":33,"./vwap":34,"./williams":35}],29:[function(require,module,exports){
+        }, { "../accessor": 8, "./adx": 20, "./aroon": 21, "./atr": 22, "./atrtrailingstop": 23, "./bollinger": 24, "./ema": 25, "./heikinashi": 26, "./ichimoku": 27, "./indicatormixin": 29, "./macd": 30, "./rsi": 31, "./sma": 32, "./stochastic": 33, "./vwap": 34, "./williams": 35 }],
+        29: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -1496,7 +1525,8 @@ module.exports = function() {
     return indicatorMixin;
   };
 };
-},{}],30:[function(require,module,exports){
+        }, {}],
+        30: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc, indicator_ema) {  // Injected dependencies
@@ -1557,7 +1587,8 @@ function datum(date, macd, signal, difference, zero) {
   else return { date: date, macd: null, signal: null, difference: null, zero: null };
 }
 
-},{}],31:[function(require,module,exports){
+        }, {}],
+        31: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc, indicator_ema) {  // Injected dependencies
@@ -1620,7 +1651,8 @@ function datum(date, rsi, middle, overbought, oversold) {
   if(rsi) return { date: date, rsi: rsi, middle: middle, overbought: overbought, oversold: oversold };
   else return { date: date, rsi: null, middle: null, overbought: null, oversold: null };
 }
-},{}],32:[function(require,module,exports){
+        }, {}],
+        32: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc) {  // Injected dependencies
@@ -1679,7 +1711,8 @@ module.exports = function(indicatorMixin, accessor_ohlc) {  // Injected dependen
     return indicator;
   };
 };
-},{}],33:[function(require,module,exports){
+        }, {}],
+         33: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc) {  // Injected dependencies
@@ -1770,7 +1803,8 @@ function datum(date, stochasticK,stochasticD, middle, overbought, oversold) {
   else return { date: date, stochasticK: null,stochasticD:null, middle: middle, overbought: overbought, oversold: oversold };
 }
 
-},{}],34:[function(require,module,exports){
+        }, {}],
+        34: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc) {  // Injected dependencies
@@ -1815,7 +1849,8 @@ module.exports = function(indicatorMixin, accessor_ohlc) {  // Injected dependen
   };
 };
 
-},{}],35:[function(require,module,exports){
+        }, {}],
+        35: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(indicatorMixin, accessor_ohlc) {  // Injected dependencies
@@ -1887,7 +1922,8 @@ function datum(date, williams, middle, overbought, oversold) {
   else return { date: date, williams: null, middle: null, overbought: null, oversold: null };
 }
 
-},{}],36:[function(require,module,exports){
+        }, {}],
+        36: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_adx, plot, plotMixin) {  // Injected dependencies
@@ -1931,7 +1967,8 @@ function refresh(selection, adxLine, plusDiLine, minusDiLine) {
   selection.select('path.minusDi').attr('d', minusDiLine);
 }
 
-},{}],37:[function(require,module,exports){
+        }, {}],
+        37: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_aroon, plot, plotMixin) {  // Injected dependencies
@@ -1987,7 +2024,8 @@ function refresh(selection, accessor, x, y, plot, oscLine, oscArea, middleLine, 
   selection.select('path.aroon.down').attr('d', downLine);
 }
 
-},{}],38:[function(require,module,exports){
+        }, {}],
+        38: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_atrtrailingstop, plot, plotMixin) {  // Injected dependencies
@@ -2026,7 +2064,8 @@ function refresh(selection, upLine, downLine) {
   selection.select('path.up').attr('d', upLine);
   selection.select('path.down').attr('d', downLine);
 }
-},{}],39:[function(require,module,exports){
+        }, {}],
+        39: [function (require, module, exports) {
 'use strict';
 
 /**
@@ -2187,7 +2226,8 @@ function backgroundPath(accessor, axis, orient, height, width, point, neg) {
     }
   };
 }
-},{}],40:[function(require,module,exports){
+        }, {}],
+        40: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_bollinger, plot, plotMixin) {  // Injected dependencies
@@ -2229,7 +2269,8 @@ function refresh(selection, upperLine, middleLine, lowerLine) {
   selection.select('path.lower').attr('d', lowerLine);
 }
 
-},{}],41:[function(require,module,exports){
+        }, {}],
+        41: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_scale_linear, d3_extent, accessor_ohlc, plot, plotMixin) {  // Injected dependencies
@@ -2310,7 +2351,8 @@ module.exports = function(d3_scale_linear, d3_extent, accessor_ohlc, plot, plotM
     return candlestick;
   };
 };
-},{}],42:[function(require,module,exports){
+        }, {}],
+        42: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_select, d3_event, d3_mouse, d3_dispatch, accessor_crosshair, plot, plotMixin) { // Injected dependencies
@@ -2484,7 +2526,8 @@ module.exports = function(d3_select, d3_event, d3_mouse, d3_dispatch, accessor_c
     return binder();
   };
 };
-},{}],43:[function(require,module,exports){
+        }, {}],
+        43: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_svg_area, d3_line_interpolate, accessor_ichimoku, plot, plotMixin) {  // Injected dependencies
@@ -2574,7 +2617,8 @@ function negate(accessor) {
 function randomID() {
   return Math.random().toString(36).substr(2, 9);
 }
-},{}],44:[function(require,module,exports){
+        }, {}],
+        44: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3) {
@@ -2632,7 +2676,8 @@ module.exports = function(d3) {
     return d3event;
 }
 
-},{"../accessor":8,"../scale":59,"../svg":62,"../util":64,"./adx":36,"./aroon":37,"./atrtrailingstop":38,"./axisannotation":39,"./bollinger":40,"./candlestick":41,"./crosshair":42,"./ichimoku":43,"./line":45,"./macd":46,"./ohlc":47,"./plot":48,"./plotmixin":49,"./rsi":50,"./stochastic":51,"./supstance":52,"./tick":53,"./tradearrow":54,"./trendline":55,"./volume":56,"./williams":57}],45:[function(require,module,exports){
+        }, { "../accessor": 8, "../scale": 59, "../svg": 62, "../util": 64, "./adx": 36, "./aroon": 37, "./atrtrailingstop": 38, "./axisannotation": 39, "./bollinger": 40, "./candlestick": 41, "./crosshair": 42, "./ichimoku": 43, "./line": 45, "./macd": 46, "./ohlc": 47, "./plot": 48, "./plotmixin": 49, "./rsi": 50, "./stochastic": 51, "./supstance": 52, "./tick": 53, "./tradearrow": 54, "./trendline": 55, "./volume": 56, "./williams": 57 }],
+        45: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_value, plot, plotMixin, showZero) {  // Injected dependencies
@@ -2677,7 +2722,8 @@ function refresh(selection, accessor, x, y, plot, svgLine, showZero) {
     selection.select('path.zero').attr('d', plot.horizontalPathLine(x, accessor.z, y));
   }
 }
-},{}],46:[function(require,module,exports){
+        }, {}],
+        46: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_macd, plot, plotMixin) {  // Injected dependencies
@@ -2738,7 +2784,8 @@ function refresh(selection, accessor, x, y, plot, differenceGenerator, macdLine,
   selection.select('path.macd').attr('d', macdLine);
   selection.select('path.signal').attr('d', signalLine);
 }
-},{}],47:[function(require,module,exports){
+        }, {}],
+        47: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_scale_linear, d3_extent, accessor_ohlc, plot, plotMixin) {  // Injected dependencies
@@ -2787,7 +2834,8 @@ module.exports = function(d3_scale_linear, d3_extent, accessor_ohlc, plot, plotM
     return ohlc;
   };
 };
-},{}],48:[function(require,module,exports){
+        }, {}],
+        48: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_svg_line, d3_svg_area, d3_line_interpolate, d3_select) {
@@ -3097,7 +3145,8 @@ module.exports = function(d3_svg_line, d3_svg_area, d3_line_interpolate, d3_sele
     plotComposer: PlotComposer
   };
 };
-},{}],49:[function(require,module,exports){
+        }, {}],
+        49: [function (require, module, exports) {
 'use strict';
 
 /**
@@ -3199,7 +3248,8 @@ module.exports = function(d3_scale_linear, d3_functor, techan_scale_financetime,
 
   return PlotMixin;
 };
-},{}],50:[function(require,module,exports){
+        }, {}],
+        50: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_rsi, plot, plotMixin) {  // Injected dependencies
@@ -3240,7 +3290,8 @@ function refresh(selection, accessor, x, y, plot, rsiLine) {
   selection.select('path.oversold').attr('d', plot.horizontalPathLine(accessor.d, x, accessor.os, y));
   selection.select('path.rsi').attr('d', rsiLine);
 }
-},{}],51:[function(require,module,exports){
+        }, {}],
+        51: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_stochastic, plot, plotMixin) {  // Injected dependencies
@@ -3284,7 +3335,8 @@ function refresh(selection, accessor, x, y, plot, stochUpLine, stochDownLine) {
   selection.select('path.stochastic.down').attr('d', stochDownLine);
 }
 
-},{}],52:[function(require,module,exports){
+        }, {}],
+        52: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_behavior_drag, d3_event, d3_select, d3_dispatch, accessor_supstance, plot, plotMixin) {  // Injected dependencies
@@ -3385,7 +3437,8 @@ function supstancePath(accessor, x, y) {
 function isSupstanceAccessor(accessor) {
   return accessor.s !== undefined && accessor.e !== undefined;
 }
-},{}],53:[function(require,module,exports){
+        }, {}],
+        53: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_scale_linear, d3_extent, accessor_tick, plot, plotMixin) {  // Injected dependencies
@@ -3433,7 +3486,8 @@ module.exports = function(d3_scale_linear, d3_extent, accessor_tick, plot, plotM
     return tick;
   };
 };
-},{}],54:[function(require,module,exports){
+        }, {}],
+        54: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_select, d3_functor, d3_mouse, d3_dispatch, accessor_trade, plot, plotMixin, svg_arrow) {  // Injected dependencies
@@ -3539,7 +3593,8 @@ function classed(selection, classes) {
     selection.classed(clazz, classes[clazz]);
   });
 }
-},{}],55:[function(require,module,exports){
+        }, {}],
+        55: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_behavior_drag, d3_event, d3_select, d3_dispatch, accessor_trendline, plot, plotMixin) {  // Injected dependencies
@@ -3654,7 +3709,8 @@ function trendlineEndCX(accessor_x, x) {
 function trendlineEndCY(accessor_y, y) {
   return function(d) { return y(accessor_y(d)); };
 }
-},{}],56:[function(require,module,exports){
+        }, {}],
+        56: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_volume, plot, plotMixin) {  // Injected dependencies
@@ -3711,7 +3767,8 @@ module.exports = function(accessor_volume, plot, plotMixin) {  // Injected depen
     return volume;
   };
 };
-},{}],57:[function(require,module,exports){
+        }, {}],
+        57: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(accessor_williams, plot, plotMixin) {  // Injected dependencies
@@ -3739,7 +3796,8 @@ module.exports = function(accessor_williams, plot, plotMixin) {  // Injected dep
     return williams;
   };
 };
-},{}],58:[function(require,module,exports){
+        }, {}],
+        58: [function (require, module, exports) {
 'use strict';
 
 /*
@@ -4139,7 +4197,8 @@ function d3_v3_multi_shim(multi) {
     }
   };
 }
-},{}],59:[function(require,module,exports){
+        }, {}],
+        59: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -4314,7 +4373,8 @@ function mapReduceFilter(data, map) {
     .filter(function(d) { return d !== null; }); // Remove nulls
 }
 
-},{"../accessor":8,"../util":64,"./financetime":58,"./zoomable":60}],60:[function(require,module,exports){
+        }, { "../accessor": 8, "../util": 64, "./financetime": 58, "./zoomable": 60 }],
+        60: [function (require, module, exports) {
 'use strict';
 
 /**
@@ -4369,7 +4429,8 @@ module.exports = function() {
 
   return zoomable;
 };
-},{}],61:[function(require,module,exports){
+        }, {}],
+        61: [function (require, module, exports) {
 'use strict';
 
 module.exports = function(d3_functor) {  // Injected dependencies
@@ -4460,7 +4521,8 @@ module.exports = function(d3_functor) {  // Injected dependencies
     return arrow;
   };
 };
-},{}],62:[function(require,module,exports){
+        }, {}],
+        62: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {
@@ -4468,7 +4530,8 @@ module.exports = function() {
     arrow: require('./arrow')(require('../util')().functor)
   };
 };
-},{"../util":64,"./arrow":61}],63:[function(require,module,exports){
+        }, { "../util": 64, "./arrow": 61 }],
+        63: [function (require, module, exports) {
 'use strict';
 
 var _d3;
@@ -4488,7 +4551,8 @@ module.exports = (function() {
     svg: require('./svg')(d3)
   };
 })(_d3);
-},{"../build/version":1,"./accessor":8,"./indicator":28,"./plot":44,"./scale":59,"./svg":62,"d3":"d3"}],64:[function(require,module,exports){
+        }, { "../build/version": 1, "./accessor": 8, "./indicator": 28, "./plot": 44, "./scale": 59, "./svg": 62, "d3": "d3" }],
+        64: [function (require, module, exports) {
 'use strict';
 
 module.exports = function() {

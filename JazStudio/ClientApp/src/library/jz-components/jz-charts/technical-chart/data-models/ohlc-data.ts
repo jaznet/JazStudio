@@ -1,5 +1,4 @@
-import * as d3 from 'd3';
-import * as techan from 'techan';
+
 
 export class OhlcData {
 

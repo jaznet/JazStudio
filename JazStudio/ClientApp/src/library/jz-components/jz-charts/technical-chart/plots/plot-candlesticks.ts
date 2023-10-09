@@ -1,6 +1,5 @@
 
 import * as d3 from 'd3';
-
 import * as d3Scale from 'd3-scale';
 import * as d3Axis from 'd3-axis';
 import { ChartLayoutMgr } from '../chart-elements/chart-layout-mgr';
@@ -9,25 +8,26 @@ import { TechanService } from '../../techan/techan.service';
 
 export class PlotCandlesticks {
 
+  techanSvc: TechanService;
+
   constructor(
-    private techanSvc: TechanService,
     private chartLayout: ChartLayoutMgr | undefined,
     private dataService: ChartDataService  )
-  { }
+  {
+    this.techanSvc = new TechanService();
+  }
 
   drawTechanCandlesticks(svg: any) {
 
-    
-   
-    const xScale = this.techanSvc.techan.scale.financetime()
-      .domain(this.techanSvc.techan.scale.plot.time(this.dataService.ohlcdata).domain())
+    const xScale = this.techanSvc.financetime()
+      .domain(this.techanSvc.financetime(this.dataService.ohlcdata).domain())
       .range([0, this.chartLayout!.plotOhlc.width - this.chartLayout!.axes.leftAxis - this.chartLayout!.axes.rightAxis]);
       
     const yScale = d3Scale.scaleLinear()
-      .domain(this.techanSvc.techan.scale.plot.ohlc(this.dataService.ohlcdata.slice(23)).domain())
+      .domain(this.techanSvc.indicators.ohlc(this.dataService.ohlcdata.slice(23)).domain())
       .range([this.chartLayout!.plotOhlc.height, 0]);
 
-    const techanCandlesticksPlot = this.techanSvc.techan.plot.candlestick()
+    const techanCandlesticksPlot = this.techanSvc.plotCandlestick()
       .xScale(xScale)
       .yScale(yScale);
 

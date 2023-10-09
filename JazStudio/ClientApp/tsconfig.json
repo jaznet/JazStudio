@@ -21,7 +21,11 @@
     ],
     "useDefineForClassFields": false,
     "allowSyntheticDefaultImports": true,
-    "allowJs": true
+    "allowJs": true,
+    //"types": [
+    //  "techan"
+    //],
+    "typeRoots": [ "./@types", "./node_modules/@types" ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,

@@ -1,6 +1,5 @@
 
 import * as d3 from 'd3';
-/*import * as techan from 'techan';*/
 import * as d3Scale from 'd3-scale';
 import * as d3Axis from 'd3-axis';
 import { ChartLayoutMgr } from '../chart-elements/chart-layout-mgr';
@@ -10,25 +9,29 @@ import { TechanService } from '../../techan/techan.service';
 
 export class PlotVolume {
 
+  techanSvc: TechanService;
+
   constructor(
-    private techanSvc: TechanService,
     private chartLayout: ChartLayoutMgr | undefined,
     private dataPoints: DataPoints,
-    private dataService: ChartDataService) { }
+    private dataService: ChartDataService)
+  {
+    this.techanSvc = new TechanService();
+  }
 
   drawVolume() {
 
-    const xScale = this.techanSvc.techan.scale.financetime()
-      .domain(this.techanSvc.techan.scale.plot.time(this.dataService.ohlcdata).domain())
+    const xScale = techan.scale.financetime()
+      .domain(techan.scale.plot.time(this.dataService.ohlcdata).domain())
       .range([0, this.chartLayout!.plotOhlc.width - this.chartLayout!.axes.leftAxis - this.chartLayout!.axes.rightAxis]);
 
     const yScale = d3Scale.scaleLinear()
-      .domain(this.techanSvc.techan.scale.plot.volume(this.dataService.ohlcdata).domain())
+      .domain(techan.scale.plot.volume(this.dataService.ohlcdata).domain())
       .range([this.chartLayout!.plotVolume.height, 0]);
 
     const techanVolumePlot =
-      this.techanSvc.techan.plot.volume()
-        .accessor(this.techanSvc.techan.accessor.ohlc())
+      techan.plot.volume()
+        .accessor(techan.accessor.ohlc())
         .xScale(xScale)
         .yScale(yScale);
 
