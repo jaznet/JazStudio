@@ -43,6 +43,7 @@
     "run-script-os": "^1.1.6",
     "rxjs": "~7.8.1",
     "svg-path-bounds": "^1.0.2",
+    "techan": "^0.8.0",
     "topojson": "^3.0.2",
     "tslib": "^2.5.0",
     "zone.js": "~0.13.0"

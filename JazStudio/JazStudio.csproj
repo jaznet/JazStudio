@@ -29,18 +29,14 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="ClientApp\%40types\techan\index.d.ts" />
     <None Remove="ClientApp\src\library\jz-components\jz-charts\techan\techx.js" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="ClientApp\%40types\" />
     <Folder Include="ClientApp\src\app\login\" />
     <Folder Include="ClientApp\src\library\jz-components\jz-charts\jz-techan\" />
     <Folder Include="ClientApp\src\typings\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <TypeScriptCompile Include="ClientApp\@types\techan\index.d.ts" />
   </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

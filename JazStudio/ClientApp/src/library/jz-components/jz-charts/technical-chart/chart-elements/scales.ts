@@ -13,7 +13,7 @@ export class Scales {
   data;
   _datapoints;
   xDateScale: any;
-  _priceRangleScale;
+  _priceRangleScale: any;
   techanSvc: TechanService;
   chartDataService: ChartDataService | undefined;
 
@@ -29,7 +29,7 @@ export class Scales {
     this.chartDataService = new ChartDataService();
     this.data = data;
     this._datapoints = dataPoints;
-    const dom = this.techanSvc.calculateTimeScaleDomain(this.chartDataService.ohlcdata);
+  /*  const dom = this.techanSvc.calculateTimeScaleDomain(this.chartDataService.ohlcdata);*/
 
     console.log(Data_Ohlc);
    
@@ -38,8 +38,8 @@ export class Scales {
     //  .domain(this.techanSvc.time(Data_Ohlc!).domain())
     //    .range([0, this.chartLayout!.width! - this.chartLayout!.margins.leftMargin - this.chartLayout!.margins.rightMargin]);
 
-    this._priceRangleScale = d3Scale.scaleLinear()
-      .domain([this._datapoints!.Low, this._datapoints!.High])
-      .range([this.chartLayout!.plotOhlc.height, 0]);
+    //this._priceRangleScale = d3Scale.scaleLinear()
+    //  .domain([this._datapoints!.Low, this._datapoints!.High])
+    //  .range([this.chartLayout!.plotOhlc.height, 0]);
   }
 }

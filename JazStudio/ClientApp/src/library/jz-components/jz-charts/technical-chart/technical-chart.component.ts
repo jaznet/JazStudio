@@ -126,7 +126,7 @@ export class TechnicalChartComponent  implements OnInit, AfterViewInit {
       .attr('fill', 'var(--jz-palette-color-1')
       .attr('class', 'svgElementRect');
 
-    this.techanSvc.drawTimeScale(this.svgElement, this.width, this.height);
+  //  this.techanSvc.drawTimeScale(this.svgElement, this.width, this.height);
 
     this.chartLayout.drawMargins(this.svgElement);
     this.chartLayout.drawPlotAreas(this.svgElement);

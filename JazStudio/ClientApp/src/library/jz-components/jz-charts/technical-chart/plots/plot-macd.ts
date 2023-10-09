@@ -5,6 +5,7 @@ import { ChartLayoutMgr } from '../chart-elements/chart-layout-mgr';
 import { DataPoints } from '../data-models/data-points';
 import { ChartDataService } from '../data-models/chart-data.service';
 import { TechanService } from '../../techan/techan.service';
+import * as techan from 'techan';
 
 export class PlotMacd {
 

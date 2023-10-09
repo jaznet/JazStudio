@@ -4,6 +4,7 @@ import { ChartLayoutMgr } from '../chart-elements/chart-layout-mgr';
 import { DataPoints } from '../data-models/data-points';
 import { ChartDataService } from '../data-models/chart-data.service';
 import { TechanService } from '../../techan/techan.service';
+import * as techan from 'techan';
 
 export class PlotEma {
 
@@ -24,7 +25,7 @@ export class PlotEma {
 
 
     const yScale = d3Scale.scaleLinear()
-      .domain(this.techanSvc.indicators.ohlc(this.dataService.ohlcdata.slice(23)).domain())
+      .domain(techan.indicators.ohlc(this.dataService.ohlcdata.slice(23)).domain())
       .range([this.chartLayout!.plotOhlc.height, 0]);
 
     // Pass data, period, xScale, and yScale as arguments to sma method 

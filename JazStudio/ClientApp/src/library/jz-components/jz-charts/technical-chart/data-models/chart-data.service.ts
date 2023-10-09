@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import * as d3 from 'd3';
 import { TechanService } from '../../techan/techan.service';
+import * as techan from 'techan';
 
 @Injectable({
   providedIn: 'root'
@@ -13,13 +14,16 @@ export class ChartDataService {
   sma10: any;
   sma20: any;
   ema: any;
+  techanSvc: TechanService;
 
-  constructor(private techanSvc: TechanService) { }
+  constructor() {
+    this.techanSvc = new TechanService();
+  }
 
   mapData(data: any) {
 
     const parseDate = d3.timeParse("%Y-%m-%dT%H:%M:%S");
-    let techanCandlesticksPlot: any = this.techanSvc.plotCandlestick;
+    let techanCandlesticksPlot: any = techan.plotCandlestick;
 
     let accessor = techanCandlesticksPlot.accessor();
 

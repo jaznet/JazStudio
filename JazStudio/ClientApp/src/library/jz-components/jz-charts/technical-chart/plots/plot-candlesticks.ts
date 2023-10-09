@@ -5,6 +5,7 @@ import * as d3Axis from 'd3-axis';
 import { ChartLayoutMgr } from '../chart-elements/chart-layout-mgr';
 import { ChartDataService } from '../data-models/chart-data.service';
 import { TechanService } from '../../techan/techan.service';
+import * as techan from 'techan';
 
 export class PlotCandlesticks {
 
@@ -19,15 +20,15 @@ export class PlotCandlesticks {
 
   drawTechanCandlesticks(svg: any) {
 
-    const xScale = this.techanSvc.financetime()
-      .domain(this.techanSvc.financetime(this.dataService.ohlcdata).domain())
+    const xScale = techan.financetime()
+      .domain(techan.financetime(this.dataService.ohlcdata).domain())
       .range([0, this.chartLayout!.plotOhlc.width - this.chartLayout!.axes.leftAxis - this.chartLayout!.axes.rightAxis]);
       
     const yScale = d3Scale.scaleLinear()
-      .domain(this.techanSvc.indicators.ohlc(this.dataService.ohlcdata.slice(23)).domain())
+      .domain(techan.indicators.ohlc(this.dataService.ohlcdata.slice(23)).domain())
       .range([this.chartLayout!.plotOhlc.height, 0]);
 
-    const techanCandlesticksPlot = this.techanSvc.plotCandlestick()
+    const techanCandlesticksPlot = techan.plotCandlestick()
       .xScale(xScale)
       .yScale(yScale);
 
