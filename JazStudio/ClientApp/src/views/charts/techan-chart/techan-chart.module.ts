@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TechanChartComponent } from './techan-chart.component';
+import { TechanChartRouterModule } from './techan-chart-router.module';
 
 
 
@@ -9,7 +10,11 @@ import { TechanChartComponent } from './techan-chart.component';
     TechanChartComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    TechanChartRouterModule
+  ],
+  exports: [
+    TechanChartComponent
   ]
 })
 export class TechanChartModule { }
