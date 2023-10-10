@@ -37,6 +37,7 @@
     <Folder Include="ClientApp\src\app\login\" />
     <Folder Include="ClientApp\src\library\jz-components\jz-charts\jz-techan\" />
     <Folder Include="ClientApp\src\typings\" />
+    <Folder Include="ClientApp\src\views\charts\view-sync-chart\synch-chart\" />
   </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

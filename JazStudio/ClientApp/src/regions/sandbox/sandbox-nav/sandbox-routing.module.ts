@@ -42,12 +42,12 @@ const routes: Routes = [
         component: ChorodashComponent
       },
       {
-        path: 'techchart',
+        path: 'syncchart',
        /* component: ViewTechnicalChartComponent,*/
-        loadChildren: () => import('../../../views/charts/view-tech-chart/view-tech-chart.module').then(m => m.ViewTechChartModule)
+        loadChildren: () => import('../../../views/charts/sync-chart/sync-chart.module').then(m => m.ViewSyncChartModule)
       },
       {
-        path: 'technical',
+        path: 'techan',
         /* component: ViewTechnicalChartComponent,*/
         loadChildren: () => import('../../../views/charts/view-technical-chart/view-technical-chart.module').then(m => m.ViewTechnicalChartModule)
       }
