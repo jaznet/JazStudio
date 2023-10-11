@@ -19,6 +19,7 @@ export class SyncLicService {
         const elementType = child.tagName.toLowerCase();
         if (elementType === 'div') {
           const lic: HTMLDivElement = child as HTMLDivElement;
+          
           lic.className = 'sync-license';
         }
       }

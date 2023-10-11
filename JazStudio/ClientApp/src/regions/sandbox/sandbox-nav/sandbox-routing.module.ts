@@ -44,7 +44,7 @@ const routes: Routes = [
       {
         path: 'syncchart',
        /* component: ViewTechnicalChartComponent,*/
-        loadChildren: () => import('../../../views/charts/sync-chart/sync-chart.module').then(m => m.ViewSyncChartModule)
+        loadChildren: () => import('../../../views/charts/sync-chart/sync-chart.module').then(m => m.SyncChartModule)
       },
       {
         path: 'techan',
