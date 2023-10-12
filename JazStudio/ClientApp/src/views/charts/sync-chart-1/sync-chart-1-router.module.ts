@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
-import { SyncChartComponent } from './sync-chart.component';
+import { SyncChart1Component } from './sync-chart-1.component';
 
 
 
 const routes: Routes = [
   {
     path: '',
-    component: SyncChartComponent
+    component: SyncChart1Component
   }
 ];
 
@@ -16,4 +16,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class SyncChartRouterModule { }
+export class SyncChart1RouterModule { }

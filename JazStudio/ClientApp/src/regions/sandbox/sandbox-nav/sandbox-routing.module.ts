@@ -42,9 +42,9 @@ const routes: Routes = [
         component: ChorodashComponent
       },
       {
-        path: 'syncchart',
+        path: 'syncchart-1',
        /* component: ViewTechnicalChartComponent,*/
-        loadChildren: () => import('../../../views/charts/sync-chart/sync-chart.module').then(m => m.SyncChartModule)
+        loadChildren: () => import('../../../views/charts/sync-chart-1/sync-chart-1.module').then(m => m.SyncChart1Module)
       },
       {
         path: 'techan',

@@ -3,11 +3,11 @@ import { Chart } from '@syncfusion/ej2-angular-charts';
 import { SyncLicService } from '../../../services/app-services/sync-lic.service';
 
 @Component({
-  selector: 'sync-chart',
-  templateUrl: './sync-chart.component.html',
-  styleUrls: ['./sync-chart.component.css']
+  selector: 'sync-chart-1',
+  templateUrl: './sync-chart-1.component.html',
+  styleUrls: ['./sync-chart-1.component.css']
 })
-export class SyncChartComponent implements AfterViewInit {
+export class SyncChart1Component implements AfterViewInit {
   @ViewChild('chartContainer', { static: false }) chartContainer!: ElementRef;
 
   constructor(private sync: SyncLicService) {
