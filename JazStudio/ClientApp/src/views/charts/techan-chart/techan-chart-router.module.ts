@@ -3,8 +3,6 @@ import { CommonModule } from '@angular/common';
 import { RouterModule, Routes } from '@angular/router';
 import { TechanChartComponent } from './techan-chart.component';
 
-
-
 const routes: Routes = [
   {
     path: '',

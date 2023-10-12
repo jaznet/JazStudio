@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TechanChartComponent } from './techan-chart.component';
 import { TechanChartRouterModule } from './techan-chart-router.module';
+import { JzTechanChartModule } from '../../../library/jz-components/jz-charts/jz-techan-chart/jz-techan-chart.module';
 
 
 
@@ -11,7 +12,8 @@ import { TechanChartRouterModule } from './techan-chart-router.module';
   ],
   imports: [
     CommonModule,
-    TechanChartRouterModule
+    TechanChartRouterModule,
+    JzTechanChartModule
   ],
   exports: [
     TechanChartComponent
