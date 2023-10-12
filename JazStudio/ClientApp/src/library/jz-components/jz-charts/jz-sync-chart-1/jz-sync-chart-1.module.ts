@@ -1,20 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { JzSyncChartComponent } from './jz-sync-chart.component';
+import { JzSyncChart1Component } from './jz-sync-chart-1.component';
 import { ChartModule } from '@syncfusion/ej2-angular-charts';
 
 
 
 @NgModule({
   declarations: [
-    JzSyncChartComponent
+    JzSyncChart1Component
   ],
   imports: [
     CommonModule,
     ChartModule
   ],
   exports: [
-    JzSyncChartComponent
+    JzSyncChart1Component
   ],
 })
-export class JzSyncChartModule { }
+export class JzSyncChart1Module { }

@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JzSyncChartComponent } from './jz-sync-chart.component';
+import { JzSyncChartComponent } from './jz-sync-chart-1.component';
 
 describe('JzSyncChartComponent', () => {
   let component: JzSyncChartComponent;

@@ -2,11 +2,11 @@ import { AfterViewInit, Component, ElementRef, OnInit, ViewChild } from '@angula
 import { Chart } from '@syncfusion/ej2-angular-charts';
 
 @Component({
-  selector: 'app-jz-sync-chart',
-  templateUrl: './jz-sync-chart.component.html',
-  styleUrls: ['./jz-sync-chart.component.css']
+  selector: 'app-jz-sync-chart-1',
+  templateUrl: './jz-sync-chart-1.component.html',
+  styleUrls: ['./jz-sync-chart-1.component.css']
 })
-export class JzSyncChartComponent implements OnInit, AfterViewInit {
+export class JzSyncChart1Component implements OnInit, AfterViewInit {
   @ViewChild('syncChartContainer', {static:false}) syncChartContainer!: ElementRef;
   constructor() {
 
