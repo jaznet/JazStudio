@@ -47,6 +47,11 @@ const routes: Routes = [
         loadChildren: () => import('../../../views/charts/sync-chart-1/sync-chart-1.module').then(m => m.SyncChart1Module)
       },
       {
+        path: 'syncchart-2',
+        /* component: ViewTechnicalChartComponent,*/
+        loadChildren: () => import('../../../views/charts/sync-chart-2/sync-chart-2.module').then(m => m.SyncChart2Module)
+      },
+      {
         path: 'techan',
         /* component: ViewTechnicalChartComponent,*/
         loadChildren: () => import('../../../views/charts/techan-chart/techan-chart.module').then(m => m.TechanChartModule)
