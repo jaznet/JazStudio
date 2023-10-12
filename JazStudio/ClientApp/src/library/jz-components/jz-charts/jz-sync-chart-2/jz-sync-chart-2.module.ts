@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { JzSyncChart2Component } from './jz-sync-chart-2.component';
+import { ChartModule } from '@syncfusion/ej2-angular-charts';
 
 
 
@@ -9,7 +10,8 @@ import { JzSyncChart2Component } from './jz-sync-chart-2.component';
     JzSyncChart2Component
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    ChartModule
   ],
   exports: [
     JzSyncChart2Component

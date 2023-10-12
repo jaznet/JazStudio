@@ -19,11 +19,9 @@ export class JzSyncChart1Component implements OnInit, AfterViewInit {
   ngAfterViewInit(): void {
     // Initialize the chart
     let chart = new Chart({
-      // Specify the target element using the nativeElement property of the ElementRef
-     // element: this.syncChartContainer.nativeElement,
-      // Other chart configuration options
+     
     });
-
+     
     // Render the chart
     chart.appendTo(this.syncChartContainer.nativeElement);
     console.log('sync',this.syncChartContainer);
